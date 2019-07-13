@@ -20,7 +20,7 @@ body{
     min-height: 100vh;
     background-size: 100vw 100vh;
     overflow: hidden;
-	background-image: url("images/backgrounds/basic5.png");
+	background-image: url("images/basic5.png");
 	background-position: center;
 	-webkit-animation: zoomin 1.8s linear;
 	animation: zoomin 1.8s linear;
