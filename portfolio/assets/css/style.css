@@ -1,0 +1,121 @@
+body{
+	margin: 0px auto;
+	background-color: #fff223;
+	font-size: 14px;
+	line-height: 21px;
+	padding: 10px 20px;
+	font-family: 'Spoqa Han Sans', 'Sans-serif';
+}
+
+.list{
+	position: fixed;
+	width: 45vw;
+	float: left;
+}
+
+.list>span{
+	cursor: pointer;
+}
+
+.archiveList{
+	cursor: pointer;
+}
+
+.archiveList>span{
+	cursor: pointer;
+}
+
+.work{
+	position: absolute;
+	left: 45vw;
+	width: 53vw;
+	padding-bottom: 40px;
+	display: none;
+	overflow: scroll;
+}
+
+.archiveListW{
+	position: absolute;
+	left: 45vw;
+	width: 53vw;
+	padding-bottom: 40px;
+	display: none;
+	float: none;
+}
+
+.footer{
+	font-family: 'Spoqa Han Sans', 'Sans-serif';
+	height: 20px;
+	font-size: 12px;
+	position: fixed;
+	width: 10000000px;
+	overflow: hidden;
+	left: 0;
+	bottom: 0;
+	background-color: #fff223; 
+	padding: .5em;
+}
+
+.img{
+	position: relative;
+	content:url("images/img.png");
+	width: 63px;
+	top: 1.2px;
+	padding: 0px 1px;
+}
+
+.archiveImage{
+	margin-top: 20px;
+}
+
+.archiveImage img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 34vw;
+}
+
+.underline{
+	border-bottom: 1px solid black;
+	}
+
+.posters{
+	margin-top: 20px;
+}
+.posters img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50vw;
+}
+
+.aweekImage img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 30vw;
+	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ewooImage img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 52vw;
+}
+
+.cartoon img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25vw;
+}
+
+a{
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 0.8px solid black;
+
+	}
+a:link{color: black;}
+a:visited{color: black;}
