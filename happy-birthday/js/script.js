@@ -9,24 +9,7 @@ $(document).ready(function(){
 		$(".frame").fadeOut(3000);
 		$("body").css("background-color", "black");
 		$("body").css("background-color", "black");
-		$("#alert").hide(); 
 	});
-});
-
-$(function(){
-  $(document).mousemove(function(e) {
-      mouseX = e.pageX;
-      mouseY = e.pageY;
-      $('#alert').css("left", mouseX+48).css("top", mouseY+15).html("촛불을 불어주세요");
- });
-});
-
-$(document).ready(function(){ 
-	$(document).mousemove(function(event){ 
-    var x = event.pageX, y = event.pageY; 
-    $("#PopLayer").css("left",x+"px"); 
-    $("#PopLayer").css("top",y+"px"); 
-    }); 
 });
 
 function flashlight(){
@@ -55,8 +38,6 @@ function flashlight2(){
 function delay(){
 	setTimeout(function(){
 		$(document).ready(function(){
-			// $(".candleImage").attr('src','./css/images/candle2.gif');
-			$('body').css('cursor','url(./css/images/wind.png),default');
 			$("#alert").fadeIn(2000);
 		});
 	});
@@ -270,6 +251,33 @@ function sticker(){
 	div[32] = document.querySelector('#div33');
 	div[33] = document.querySelector('#div34');
 
+	div[34] = document.querySelector('#div35');
+	div[35] = document.querySelector('#div36');
+	div[36] = document.querySelector('#div37');
+	div[37] = document.querySelector('#div38');
+	div[38] = document.querySelector('#div39');
+	div[39] = document.querySelector('#div40');
+	div[40] = document.querySelector('#div41');
+	div[41] = document.querySelector('#div42');
+	div[42] = document.querySelector('#div43');
+	div[43] = document.querySelector('#div44');
+	div[44] = document.querySelector('#div45');
+	div[45] = document.querySelector('#div46');
+	div[46] = document.querySelector('#div47');
+	div[47] = document.querySelector('#div48');
+	div[48] = document.querySelector('#div49');
+	div[49] = document.querySelector('#div50');
+	div[50] = document.querySelector('#div51');
+	div[51] = document.querySelector('#div52');
+	div[52] = document.querySelector('#div53');
+	div[53] = document.querySelector('#div54');
+	div[54] = document.querySelector('#div55');
+	div[55] = document.querySelector('#div56');
+	div[56] = document.querySelector('#div57');
+	div[57] = document.querySelector('#div58');
+	div[58] = document.querySelector('#div59');
+	div[59] = document.querySelector('#div60');
+	
 	randomSticker(div).innerHTML = randomSticker(sticker);
 
 	function randomSticker(a){
