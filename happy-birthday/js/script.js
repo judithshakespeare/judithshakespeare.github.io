@@ -36,12 +36,9 @@ function flashlight2(){
 
 
 function delay(){
-	setTimeout(function(){
-		$(document).ready(function(){
+	$(document).ready(function(){
 			$("#alert").fadeIn(2000);
-		});
-	});
-}
+			});}
 
 function birthdayCard(){
 	$('body').css('cursor','default');
@@ -277,7 +274,7 @@ function sticker(){
 	div[57] = document.querySelector('#div58');
 	div[58] = document.querySelector('#div59');
 	div[59] = document.querySelector('#div60');
-	
+
 	randomSticker(div).innerHTML = randomSticker(sticker);
 
 	function randomSticker(a){
