@@ -9,7 +9,7 @@ html, body{
 body{
 	font-family: sans-serif;
 	overflow: hidden;
-	font-size: 20px;
+	font-size: 21px;
 }
 
 .frame{
@@ -51,9 +51,12 @@ body{
 }
 
 #alert{
-	position: fixed;
 	display: none;
-	font-size: 12px;
+	text-align: center;
+	position: relative;
+	top: 60vh;
+	left: -1vw;
+	font-size: 13px;
 }
 
 .main{
@@ -166,11 +169,6 @@ body{
 	overflow: hidden;
 	width: 100vw;
 	height: 100vh;
-}
-
-#alert{
-	display: none;
-	text-align: center;
 }
 
 #div1{position: absolute; left: 60vw; top: 10vh;}
