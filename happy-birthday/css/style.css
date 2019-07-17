@@ -162,45 +162,81 @@ body{
 
 .sticker{
 	display: none;
+	position: absolute;
+	overflow: hidden;
 	width: 100vw;
 	height: 100vh;
 }
 
-#div1{position: absolute; left: 85%; top: 10%;}
-#div2{position: absolute; left: 5%; top: 80%;}
-#div3{position: absolute; left: 90%; top: 30%;}
-#div4{position: absolute; left: 3%; top: 40%;}
-#div5{position: absolute; left: 2%; top: 50%;}
-#div6{position: absolute; left: 90%; top: 60%;}
-#div7{position: absolute; left: 85%; top: 70%;}
-#div8{position: absolute; left: 70%; top: 80%;}
-#div9{position: absolute; left: 70%; top: 4%;}
-#div10{position: absolute; left: 60%; top: 3%;}
-#div11{position: absolute; left: 0%; top: 0%;}
-#div12{position: absolute; left: 40%; top: 2%;}
-#div13{position: absolute; left: 32%; top: 5%;}
-#div14{position: absolute; left: 50%; top: 30%;}
-#div15{position: absolute; left: 40%; top: 40%;}
-#div16{position: absolute; left: 35%; top: 50%;}
-#div17{position: absolute; left: 10%; top: 60%;}
-#div18{position: absolute; left: 20%; top: 90%;}
-#div19{position: absolute; left: 30%; top: 85%;}
-#div21{position: absolute; left: 0%; top: 10%;}
-#div22{position: absolute; left: 10%; top: 15%;}
-#div23{position: absolute; left: 20%; top: 20%;}
-#div24{position: absolute; left: 30%; top: 30%;}
-#div25{position: absolute; left: 50%; top: 70%;}
-#div26{position: absolute; left: 70%; top: 70%;}
-#div27{position: absolute; left: 0%; top: 95%;}
-#div28{position: absolute; left: 80%; top: 78%;}
-#div29{position: absolute; left: 35%; top: 29%;}
-#div30{position: absolute; left: 12%; top: 93%;}
-#div31{position: absolute; left: 45%; top: 23%;}
-#div32{position: absolute; left: 10%; top: 43%;}
-#div33{position: absolute; left: 45%; top: 65%;}
-#div34{position: absolute; left: 76%; top: 97%;}
-#div35{position: absolute; left: 35%; top: 73%;}
+#alert{
+	display: none;
+	text-align: center;
+}
+
+#div1{position: absolute; left: 60vw; top: 10vh;}
+#div2{position: absolute; left: 5vw; top: 80vh;}
+#div3{position: absolute; left: 90vw; top: 30vh;}
+#div4{position: absolute; left: 3vw; top: 40vh;}
+#div5{position: absolute; left: 2vw; top: 50vh;}
+#div6{position: absolute; left: 90vw; top: 60vh;}
+#div7{position: absolute; left: 85vw; top: 70vh;}
+#div8{position: absolute; left: 70vw; top: 70vh;}
+#div9{position: absolute; left: 70vw; top: 4vh;}
+#div10{position: absolute; left: 60vw; top: 3vh;}
+#div11{position: absolute; left: 0vw; top: 0vh;}
+#div12{position: absolute; left: 40vw; top: 2vh;}
+#div13{position: absolute; left: 32vw; top: 5vh;}
+#div14{position: absolute; left: 50vw; top: 30vh;}
+#div15{position: absolute; left: 40vw; top: 40vh;}
+#div16{position: absolute; left: 35vw; top: 50vh;}
+#div17{position: absolute; left: 10vw; top: 60vh;}
+#div18{position: absolute; left: 20vw; top: 70vh;}
+#div19{position: absolute; left: 30vw; top: 85vh;}
+#div21{position: absolute; left: 0vw; top: 10vh;}
+#div22{position: absolute; left: 10vw; top: 15vh;}
+#div23{position: absolute; left: 20vw; top: 20vh;}
+#div24{position: absolute; left: 30vw; top: 30vh;}
+#div25{position: absolute; left: 50vw; top: 70vh;}
+#div26{position: absolute; left: 70vw; top: 70vh;}
+#div27{position: absolute; left: 0vw; top: 75vh;}
+#div28{position: absolute; left: 60vw; top: 78vh;}
+#div29{position: absolute; left: 35vw; top: 29vh;}
+#div30{position: absolute; left: 12vw; top: 83vh;}
+#div31{position: absolute; left: 45vw; top: 23vh;}
+#div32{position: absolute; left: 10vw; top: 43vh;}
+#div33{position: absolute; left: 45vw; top: 65vh;}
+#div34{position: absolute; left: 76vw; top: 57vh;}
+#div35{position: absolute; left: 35vw; top: 73vh;}
+
+#div36{position: absolute; left: 80vw; top: 60vh;}
+#div37{position: absolute; left: 75vw; top: 70vh;}
+#div38{position: absolute; left: 50vw; top: 80vh;}
+#div39{position: absolute; left: 60vw; top: 4vh;}
+#div40{position: absolute; left: 60vw; top: 3vh;}
+#div41{position: absolute; left: 0vw; top: 0vh;}
+#div42{position: absolute; left: 40vw; top: 2vh;}
+#div43{position: absolute; left: 32vw; top: 5vh;}
+#div44{position: absolute; left: 50vw; top: 30vh;}
+#div45{position: absolute; left: 40vw; top: 40vh;}
+#div46{position: absolute; left: 35vw; top: 50vh;}
+#div47{position: absolute; left: 10vw; top: 60vh;}
+#div48{position: absolute; left: 20vw; top: 60vh;}
+#div49{position: absolute; left: 30vw; top: 85vh;}
+#div51{position: absolute; left: 0vw; top: 20vh;}
+#div52{position: absolute; left: 10vw; top: 15vh;}
+#div53{position: absolute; left: 20vw; top: 20vh;}
+#div54{position: absolute; left: 30vw; top: 30vh;}
+#div55{position: absolute; left: 50vw; top: 70vh;}
+#div56{position: absolute; left: 70vw; top: 70vh;}
+#div57{position: absolute; left: 0vw; top: 45vh;}
+#div58{position: absolute; left: 70vw; top: 78vh;}
+#div59{position: absolute; left: 35vw; top: 29vh;}
+#div60{position: absolute; left: 12vw; top: 53vh;}
 
 .div{
-	width: 50%
+	position: absolute;
+	overflow: hidden;
+}
+
+.div img{
 }
