@@ -20,7 +20,7 @@ function flashlight(){
 	$("#flashlight").css("display", "none");
 	$(".sticker").css("display", "block");
 	$("#StickerBtn").css("display", "block");
-	$('body').css('cursor','url(./css/images/party.png),default');
+	// $('body').css('cursor','url(./css/images/party.png),default');
 };
 
 function flashlight2(){
