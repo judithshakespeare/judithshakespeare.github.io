@@ -145,6 +145,7 @@ body{
 #flashlight{
 	color: white;
 	padding: 10px 13px;
+	cursor: pointer;
 }
 
 #flashlight2, #StickerBtn{
@@ -152,6 +153,7 @@ body{
 	background-color: white;
 	border-radius: 50%;
 	padding: 10px 13px;
+	cursor: pointer;
 }
 
 #StickerBtn{
