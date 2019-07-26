@@ -12,8 +12,8 @@ body{
   padding: 20px 30px;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 300;
-  font-size: 8vw;
-  line-height: 10vw;
+  font-size: 7vw;
+  line-height: 9.5vw;
   overflow: hidden;}
 *, *:before, *:after {box-sizing: inherit;}
 img,video {max-width: 100%;}
@@ -22,12 +22,12 @@ img,video {max-width: 100%;}
 input{
   outline: none;
   border: none;
-  border-bottom: .3vw solid black;
+  border-bottom: .25vw solid black;
   width: 30%;
-  height: 10vw;
+  height: 9.5vw;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 300;
-  font-size: 8vw;
+  font-size: 7vw;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
@@ -102,3 +102,4 @@ input{
   font-size: 16px;
   line-height: 22px;
 }
+
