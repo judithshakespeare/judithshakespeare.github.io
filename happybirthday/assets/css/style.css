@@ -18,7 +18,6 @@ body{
 *, *:before, *:after {box-sizing: inherit;}
 img,video {max-width: 100%;}
 /**/
-
 input{
   outline: none;
   border: none;
@@ -42,7 +41,7 @@ input{
 }
 #paperbag{
   position: absolute;
-  width: 600px;
+  width: 700px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -54,15 +53,45 @@ input{
   from {-webkit-transform: translate(-50%, -50%) rotate(0deg);}
   to {-webkit-transform: translate(-50%, -50%) rotate(10deg);}
 }
-.birthdayObjects{
+#items{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
 }
-#pajamas{width: 50%;}
-#tulip{width: 70%;}
-#sneakers{width: 40%;}
+#pajamas{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;}
+#tulip{
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 0%);
+  width: 70%;}
+#sneakers{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;}
+#book{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  box-shadow: 3px 2px 3px 1px #aaaaaa;}
+#badge1, #badge2{
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  width: 13%;}
 /*생일카드*/
 #envelope{
   display: none;
@@ -99,7 +128,102 @@ input{
   text-align: center;
   word-break: keep-all;
   font-weight: 400; 
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 22%;
+  line-height: 150%;
 }
 
+@media screen and (max-width: 450px){
+  #envelope{
+    display: none;
+    position: absolute;
+    width:80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #envelopeOpen{
+    display: none;
+    position: absolute;
+    width:80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #paper{
+    display: none;
+    position: absolute;
+    width:70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #birthdayCard{
+    display: none;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    text-align: center;
+    word-break: keep-all;
+    font-weight: 400; 
+    font-size: 55%;
+    line-height: 150%;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 736px){
+  #paperbag{
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  -webkit-animation: rotation .4s infinite linear;
+  animation-direction: alternate;
+}
+@-webkit-keyframes rotation {
+  from {-webkit-transform: translate(-50%, -50%) rotate(0deg);}
+  to {-webkit-transform: translate(-50%, -50%) rotate(10deg);}
+}
+  #envelope{
+    display: none;
+    position: absolute;
+    width:45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #envelopeOpen{
+    display: none;
+    position: absolute;
+    width:45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #paper{
+    display: none;
+    position: absolute;
+    width:35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #birthdayCard{
+    display: none;
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    text-align: center;
+    word-break: keep-all;
+    font-weight: 400; 
+    font-size: 22%;
+    line-height: 150%;
+  }
+}
