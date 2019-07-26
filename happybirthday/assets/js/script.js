@@ -20,11 +20,11 @@ $(document).ready(function(){
             document.querySelector('#items').innerHTML = randomItem(items);
             function randomItem(a){return a[Math.floor(Math.random() * a.length)];};
             $("#paperbag").hide();
+            $("#alert").hide();
         }else if(count==2){
             setTimeout(function(){
                 // $("#items").fadeOut(1200);
             $("#envelope").fadeIn(1500);},1200);
-            $("#alert").hide();
         }else if(count==3){
             $("#envelopeOpen").fadeIn(900);
             setTimeout(function(){
