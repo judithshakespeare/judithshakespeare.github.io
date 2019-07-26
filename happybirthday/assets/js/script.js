@@ -2,6 +2,7 @@ function input(){
     setTimeout(function(){
         $("#main2").fadeIn(2000);
         $("#paperbag").show();
+        $("#alert").show();
         $("#main1").hide();},1000);
 }
 $(document).ready(function(){
@@ -22,6 +23,7 @@ $(document).ready(function(){
                 // $("#items").fadeOut(1200);
                 $("#envelope").fadeIn(1500);},1200);
             $("#paperbag").hide();
+            $("#alert").hide();
         }else if(count==2){
             $("#envelopeOpen").fadeIn(900);
             setTimeout(function(){
