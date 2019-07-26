@@ -85,7 +85,7 @@ $(document).ready(function(){
                 $("#envelopeOpen").fadeIn(900);
                 setTimeout(function(){
                     $("#paper").fadeIn(1000);
-                    $("#background").fadeIn(2000);
+                    // $("#background").fadeIn(2000);
                     $("#birthdayCard").fadeIn(2000);
                     birthdayCard();
                 },2000);
