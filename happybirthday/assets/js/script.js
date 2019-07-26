@@ -1,99 +1,39 @@
-function today(){
-    var name = document.querySelector('#fistName').value;
-    var month = document.querySelector('#month').value;
-    var day = document.querySelector('#day').value;
+function input(){
     setTimeout(function(){
-        document.querySelector('#today').innerHTML = "오늘은 "+month+"월 "+day+"일입니다.";
-        $("#main2").show();
-        $("#input").hide();}, 500);
+        $("#main2").fadeIn(2000);
+        $("#paperbag").show();
+        $("#main1").hide();},1000);
 }
 $(document).ready(function(){
-    $("#main1").click(function(){
-    });
-
-    $("#paperbag1").click(function(){
-        $("#paperbag1").hide();
-        $("#pajamas").show();
-    });
-
-    $("#paperbag3").click(function(){
-        $("#paperbag3").hide();
-        $("#tulip").show();
-    });
-
     $(function(){
         var count = 0;
+        var birthdayObjects = new Array();
+        birthdayObjects[0] = "<img class='birthdayObjects' id='tulip' src='assets/images/tulip.png'>";
+        birthdayObjects[1] = "<img class='birthdayObjects' id='pajamas' src='assets/images/pajamas.png'>";
+        birthdayObjects[2] = "<img class='birthdayObjects' id='sneakers' src='assets/images/sneakers.png'>";        
         $("#main2").click(function(e){
             count++;
-            var percentLeft = e.pageX/$(window).width() * 100;
-            var percentTop = e.pageY/$(window).height() *100;
             if(count==1){
-            //     $("#miyeokgook").show();
-            //     $("#miyeokgook").css({
-            //         "position": 'absolute',
-            //         "left": percentLeft + '%',
-            //         "top": percentTop + '%'});
-            // }else if(count==2){
-            //     $("#rice").show();
-            //     $("#rice").css({
-            //         "position": 'absolute',
-            //         "left": percentLeft + '%',
-            //         "top": percentTop + '%'});
-            // }else if(count==3){
-            //     $("#cake2").show();
-            //     $("#cake2").css({
-            //         "position": 'absolute',
-            //         "left": percentLeft + '%',
-            //         "top": percentTop + '%'});
-            // }else if(count==4){
-            //     $("#paperbag1").fadeIn(500);
-            // }else if(count==5){
-            //     $("#pizza").show();
-            //     $("#pizza").css({
-            //         "position": 'absolute',
-            //         "left": percentLeft + '%',
-            //         "top": percentTop + '%',});
-            // }else if(count==6){
-            //     $("#beer").show();
-            //     $("#beer").css({
-            //         "position": 'absolute',
-            //         "left": percentLeft + '%',
-            //         "top": percentTop + '%',});
-            // }else if(count==7){
-            //     $("#cake3").show();
-            //     $("#cake3").css({
-            //         "position": 'absolute',
-            //         "left": percentLeft + '%',
-            //         "top": percentTop + '%',});
-            // }else if(count==8){
-            //     $("#coffee").show();
-            //     $("#coffee").css({
-            //         "position": 'absolute',
-            //         "left": percentLeft + '%',
-            //         "top": percentTop + '%',});
-            // }else if(count==9){
-            //     $("#candle").show();
-            //     $("#candle").css({
-            //         "position": 'absolute',
-            //         "left": percentLeft + '%',
-            //         "top": percentTop + '%',});
-            // }else if(count==10){
-            //     $("#paperbag3").fadeIn(500);   
-            // }else if(count==11){
-            //     $("#envelope").show();
-            // }else if(count==12){
-                $("#envelopeOpen").fadeIn(900);
-                setTimeout(function(){
-                    $("#paper").fadeIn(1000);
+            document.querySelector('#birthdayObjects').innerHTML = randomItem(birthdayObjects);
+            function randomItem(a){return a[Math.floor(Math.random() * a.length)];};
+
+            setTimeout(function(){
+                $("#envelope").fadeIn(1500);},1500);
+            $("#paperbag").hide();
+        }else if(count==2){
+            $("#envelopeOpen").fadeIn(900);
+            setTimeout(function(){
+                $("#paper").fadeIn(1000);
                     // $("#background").fadeIn(2000);
                     $("#birthdayCard").fadeIn(2000);
                     birthdayCard();
                 },2000);
-                    $("#envelope").fadeOut(850);
-            }else{};
-            });
-        });
+            $("#envelope").fadeOut(850);
+        }
+        else{};
     });
+    });
+});
 
 function birthdayCard(){
     var name = document.querySelector('#fistName').value;
@@ -191,22 +131,22 @@ happyBirthDay[7] = clickK() + "이 되니까 네 생각이 나더라.<br>" + mon
     // happyBirthDay[8] = "돌아보면 우리 꽤 씩씩하게 견뎌낸 것 같아.<br>그냥 앞으로도 이렇게, 아프지 말고<br>오래오래 같이 살아내고 싶어.<br>그걸로도 이미 다행인 마음이야.<br>" + reulReturner3() + ". 많이 사랑하는 거 알지?<br><br>생일 축하해.";
     // happyBirthDay[8] = "나를 이렇게나 잘 아는 사람이 너라는게 기쁘고 고마워.<br><br>생일 축하해.";
     // happyBirthDay[9] = "내게 결국 남아있는 사람은 늘 너였던 것 같아.<br>너와 함께 있으면 가장 나다울 수 있어. 그래서 고마워.<br><br>생일 축하해.";
-    happyBirthDay[8] = "내가 살아온 시간들이 너로 인해<br>조금 더 단단해질 수 있었던 것 같아.<br><br>생일 축하해.";
-    happyBirthDay[9] = "무엇을 놓치지 않고 살아가고 싶은지 우리 많이 이야기했었잖아. 앞으로도 그렇게 차곡차곡 우리의 삶을 살아갈거라 믿어. 늘 너를 만나 다행이야!<br><br>생일 축하해.";
-    happyBirthDay[10] = "너랑 있으면 잘 뭉친 초밥의<br>밥이 되는 기분이야. 꽉 차는 기분.<br><br>생일 축하해.";
-    happyBirthDay[11] = "당신은 잘못 날아오지 않았다.<br><br>생일 축하합니다.";
-    happyBirthDay[12] = "네가 없어도 널 생각해.<br><br>생일 축하해.";
-    happyBirthDay[13] = "많이 사랑해. 앞으로도 그럴거야.<br>너에겐 당연한 일이야.<br><br>생일 축하해.";
-    happyBirthDay[14] = "혼자 밖에 있을 때, 너와 함께라면 조금 더 괜찮은 날이 되지 않았을까—생각하곤 해. 아마 먼 훗날에도 이런 생각을 하지 않을까 싶다.<br><br>생일 축하해.";
-    happyBirthDay[15] = "누군가를 만나 밥먹고 차마시는 게 쉬운 일이 아니라는 걸, 그렇게 하기 위해서는 꽤 많은 노력을 해야 한다는 걸 서서히 깨달아 가고 있는 것 같아. 그리고 너는 내게 그런 노력이 조금도 아깝지 않은 사람이야.<br><br>생일 축하해. " + reulReturner3() +".";
+happyBirthDay[8] = "내가 살아온 시간들이 너로 인해<br>조금 더 단단해질 수 있었던 것 같아.<br><br>생일 축하해.";
+happyBirthDay[9] = "무엇을 놓치지 않고 살아가고 싶은지 우리 많이 이야기했었잖아. 앞으로도 그렇게 차곡차곡 우리의 삶을 살아갈거라 믿어. 늘 너를 만나 다행이야!<br><br>생일 축하해.";
+happyBirthDay[10] = "너랑 있으면 잘 뭉친 초밥의<br>밥이 되는 기분이야. 꽉 차는 기분.<br><br>생일 축하해.";
+happyBirthDay[11] = "당신은 잘못 날아오지 않았다.<br><br>생일 축하합니다.";
+happyBirthDay[12] = "네가 없어도 널 생각해.<br><br>생일 축하해.";
+happyBirthDay[13] = "많이 사랑해. 앞으로도 그럴거야.<br>너에겐 당연한 일이야.<br><br>생일 축하해.";
+happyBirthDay[14] = "혼자 밖에 있을 때, 너와 함께라면 조금 더 괜찮은 날이 되지 않았을까—생각하곤 해. 아마 먼 훗날에도 이런 생각을 하지 않을까 싶다.<br><br>생일 축하해.";
+happyBirthDay[15] = "누군가를 만나 밥먹고 차마시는 게 쉬운 일이 아니라는 걸, 그렇게 하기 위해서는 꽤 많은 노력을 해야 한다는 걸 서서히 깨달아 가고 있는 것 같아. 그리고 너는 내게 그런 노력이 조금도 아깝지 않은 사람이야.<br><br>생일 축하해. " + reulReturner3() +".";
     // happyBirthDay[19] = "너를 보고 있으면 네게는 소중한 무엇이 있는 것 같아.<br>그걸 지켜내느라 아픈 게 아닐까 싶다.<br>그치만 소중한 것이 있고, 또 지킬 게 있다는 건<br>끝끝내 무너지지 않을 수 있다는 거잖아.<br>그래서 나는 널 너무 걱정하지 않는다.<br><br>생일 축하해.";
-    happyBirthDay[16] = "관계를 처음부터 새로 쌓아가야 했던 게, 지금 생각해보면 조금 힘들었던 것 같아. 그래서 그런 내 한 켠을 채워줬던 네게 많이 고마워.<br><br>생일 축하해. " + reulReturner3();
+happyBirthDay[16] = "관계를 처음부터 새로 쌓아가야 했던 게, 지금 생각해보면 조금 힘들었던 것 같아. 그래서 그런 내 한 켠을 채워줬던 네게 많이 고마워.<br><br>생일 축하해. " + reulReturner3();
     // happyBirthDay[17] = "내가 슬픔을 쏟아낼 때<br>네가 기꺼이 그것을 받아주려고 하듯이,<br>나도 너의 슬픔을 나눠 가지고 싶다고 생각했어.<br>그걸로 나아질 수 있을지는 모르겠지만,<br>적어도 한 번 쯤 더 웃거나 한 번 쯤 더<br>소리 내 울 수 있을 테니까.<br>내가 너 사랑한다는 건 알고 있지?<br><br>생일 축하해.";
-    happyBirthDay[17] = "네가 없었을 것을 상상하니<br>지난날들이 아득해지네.<br>태어나줘서 고마워.<br><br>생일 축하해.";
-    happyBirthDay[18] = "전에도 말했지만 넌 좋은 사람이니까 네 곁에도 좋은 사람들이 가득할 거야. 너는 한 명이면 충분하다고 했지만 수많은 사람들이 너를 사랑할 거야.<br><br>생일 축하해.";
-    happyBirthDay[19] = "너는 내가 끝끝내 지키고 싶은 사람이야.<br>생일 축하해."
-    happyBirthDay[20] = "앞으로의 날들이 아프지 않을 거라고 장담할 수 없고 그렇게 하고 싶지 않지만, 나는 너의 아픈 날들에 위로가 되는 사람이고 싶어. 나중에 돌이켜 봤을 때 기쁜 순간에 함께 했던 사람이고 싶고.<br><br>생일 축하해."    ;
-    happyBirthDay[21] = "무엇이 되지 않아도<br>너는 충분히 사랑받을 만한 사람이란다.";
+happyBirthDay[17] = "네가 없었을 것을 상상하니<br>지난날들이 아득해지네.<br>태어나줘서 고마워.<br><br>생일 축하해.";
+happyBirthDay[18] = "전에도 말했지만 넌 좋은 사람이니까 네 곁에도 좋은 사람들이 가득할 거야. 너는 한 명이면 충분하다고 했지만 수많은 사람들이 너를 사랑할 거야.<br><br>생일 축하해.";
+happyBirthDay[19] = "너는 내가 끝끝내 지키고 싶은 사람이야.<br>생일 축하해."
+happyBirthDay[20] = "앞으로의 날들이 아프지 않을 거라고 장담할 수 없고 그렇게 하고 싶지 않지만, 나는 너의 아픈 날들에 위로가 되는 사람이고 싶어. 나중에 돌이켜 봤을 때 기쁜 순간에 함께 했던 사람이고 싶고.<br><br>생일 축하해."    ;
+happyBirthDay[21] = "무엇이 되지 않아도<br>너는 충분히 사랑받을 만한 사람이란다.";
 
     document.querySelector('#happyBirthDay').innerHTML = randomItem(happyBirthDay) + '<br/>';
 
