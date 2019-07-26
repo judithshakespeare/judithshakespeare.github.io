@@ -28,60 +28,60 @@ $(document).ready(function(){
             var percentLeft = e.pageX/$(window).width() * 100;
             var percentTop = e.pageY/$(window).height() *100;
             if(count==1){
-                $("#miyeokgook").show();
-                $("#miyeokgook").css({
-                    "position": 'absolute',
-                    "left": percentLeft + '%',
-                    "top": percentTop + '%'});
-            }else if(count==2){
-                $("#rice").show();
-                $("#rice").css({
-                    "position": 'absolute',
-                    "left": percentLeft + '%',
-                    "top": percentTop + '%'});
-            }else if(count==3){
-                $("#cake2").show();
-                $("#cake2").css({
-                    "position": 'absolute',
-                    "left": percentLeft + '%',
-                    "top": percentTop + '%'});
-            }else if(count==4){
-                $("#paperbag1").fadeIn(500);
-            }else if(count==5){
-                $("#pizza").show();
-                $("#pizza").css({
-                    "position": 'absolute',
-                    "left": percentLeft + '%',
-                    "top": percentTop + '%',});
-            }else if(count==6){
-                $("#beer").show();
-                $("#beer").css({
-                    "position": 'absolute',
-                    "left": percentLeft + '%',
-                    "top": percentTop + '%',});
-            }else if(count==7){
-                $("#cake3").show();
-                $("#cake3").css({
-                    "position": 'absolute',
-                    "left": percentLeft + '%',
-                    "top": percentTop + '%',});
-            }else if(count==8){
-                $("#coffee").show();
-                $("#coffee").css({
-                    "position": 'absolute',
-                    "left": percentLeft + '%',
-                    "top": percentTop + '%',});
-            }else if(count==9){
-                $("#candle").show();
-                $("#candle").css({
-                    "position": 'absolute',
-                    "left": percentLeft + '%',
-                    "top": percentTop + '%',});
-            }else if(count==10){
-                $("#paperbag3").fadeIn(500);   
-            }else if(count==11){
-                $("#envelope").show();
-            }else if(count==12){
+            //     $("#miyeokgook").show();
+            //     $("#miyeokgook").css({
+            //         "position": 'absolute',
+            //         "left": percentLeft + '%',
+            //         "top": percentTop + '%'});
+            // }else if(count==2){
+            //     $("#rice").show();
+            //     $("#rice").css({
+            //         "position": 'absolute',
+            //         "left": percentLeft + '%',
+            //         "top": percentTop + '%'});
+            // }else if(count==3){
+            //     $("#cake2").show();
+            //     $("#cake2").css({
+            //         "position": 'absolute',
+            //         "left": percentLeft + '%',
+            //         "top": percentTop + '%'});
+            // }else if(count==4){
+            //     $("#paperbag1").fadeIn(500);
+            // }else if(count==5){
+            //     $("#pizza").show();
+            //     $("#pizza").css({
+            //         "position": 'absolute',
+            //         "left": percentLeft + '%',
+            //         "top": percentTop + '%',});
+            // }else if(count==6){
+            //     $("#beer").show();
+            //     $("#beer").css({
+            //         "position": 'absolute',
+            //         "left": percentLeft + '%',
+            //         "top": percentTop + '%',});
+            // }else if(count==7){
+            //     $("#cake3").show();
+            //     $("#cake3").css({
+            //         "position": 'absolute',
+            //         "left": percentLeft + '%',
+            //         "top": percentTop + '%',});
+            // }else if(count==8){
+            //     $("#coffee").show();
+            //     $("#coffee").css({
+            //         "position": 'absolute',
+            //         "left": percentLeft + '%',
+            //         "top": percentTop + '%',});
+            // }else if(count==9){
+            //     $("#candle").show();
+            //     $("#candle").css({
+            //         "position": 'absolute',
+            //         "left": percentLeft + '%',
+            //         "top": percentTop + '%',});
+            // }else if(count==10){
+            //     $("#paperbag3").fadeIn(500);   
+            // }else if(count==11){
+            //     $("#envelope").show();
+            // }else if(count==12){
                 $("#envelopeOpen").fadeIn(900);
                 setTimeout(function(){
                     $("#paper").fadeIn(1000);
