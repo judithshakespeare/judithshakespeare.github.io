@@ -7,18 +7,20 @@ function input(){
 $(document).ready(function(){
     $(function(){
         var count = 0;
-        var birthdayObjects = new Array();
-        birthdayObjects[0] = "<img class='birthdayObjects' id='tulip' src='assets/images/tulip.png'>";
-        birthdayObjects[1] = "<img class='birthdayObjects' id='pajamas' src='assets/images/pajamas.png'>";
-        birthdayObjects[2] = "<img class='birthdayObjects' id='sneakers' src='assets/images/sneakers.png'>";        
+        var items = new Array();
+        items[0] = "<img id='tulip' src='assets/images/tulip.png'>";
+        items[1] = "<img id='sneakers' src='assets/images/sneakers.png'>";
+        items[2] = "<img id='book' src='assets/images/book.jpg'>";
+        items[3] = "<img id='badge1' src='assets/images/badge1.png'>";
+        items[4] = "<img id='badge2' src='assets/images/badge2.png'>";      
         $("#main2").click(function(e){
             count++;
             if(count==1){
-            document.querySelector('#birthdayObjects').innerHTML = randomItem(birthdayObjects);
+            document.querySelector('#items').innerHTML = randomItem(items);
             function randomItem(a){return a[Math.floor(Math.random() * a.length)];};
-
             setTimeout(function(){
-                $("#envelope").fadeIn(1500);},1500);
+                // $("#items").fadeOut(1200);
+                $("#envelope").fadeIn(1500);},1200);
             $("#paperbag").hide();
         }else if(count==2){
             $("#envelopeOpen").fadeIn(900);
@@ -124,7 +126,7 @@ happyBirthDay[0] = "네가 없었으면 안 됐어 나는.<br>지금의 나도 �
 happyBirthDay[1] = "사람들이 어떻게 이야기해도 나는 있는 그대로의 너를 사랑해.<br><br>생일 축하해.";
 happyBirthDay[2] = reulReturner3()+". 너는 어디서든 사랑받을 거야.<br><br>생일 축하해.";
 happyBirthDay[3] = "많은 시간 곁에 있지 못하지만, 너를 숨죽여 울게 할 일이 없기를 진심으로 간절히 바라.<br><br>생일 축하한다.";
-happyBirthDay[4] = "지금껏 그래왔던 것처럼 앞으로의 특별하고, 또 특별하지 않은 날들에도 네가 있었으면 좋겠다. 어김없이 돌아올 " + month + "월 " + day + "일에 또 사랑과 축복하는<br>마음을 함께 담아 이렇게 오래 편지를 쓰고 싶다.<br><br>생일 축하해.";
+happyBirthDay[4] = "지금껏 그래왔던 것처럼 앞으로의 특별하고, 또 특별하지 않은 날들에도 네가 있었으면 좋겠다. 어김없이 돌아올 " + month + "월 " + day + "일에 또 사랑과 축복하는 마음을 함께 담아 이렇게 오래 편지를 쓰고 싶다.<br><br>생일 축하해.";
 happyBirthDay[5] = "나는 너밖에 없다.<br>너랑 같이 있기만 해도 좋으니까<br>자꾸 미안해하지마.<br><br>생일 축하해.";
 happyBirthDay[6] = "늘 너를 마음으로 끌어안고 있어. 거친 길 위에서 너는 늘 웃고 있을거야.<br><br>생일 축하해.";
 happyBirthDay[7] = clickK() + "이 되니까 네 생각이 나더라.<br>" + month + "월엔 " + reulReturner2() + " 생일이 있지, 하면서.<br>" + reulReturner3() + ". 오래 너를 사랑할게.<br><br>생일 축하해.";
