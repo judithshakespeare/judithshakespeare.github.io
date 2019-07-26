@@ -39,6 +39,16 @@ input{
   top: 0;
   left: 0;
 }
+#alert{
+  display: none;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20%;
+  font-weight: 400;
+  z-index: 4;
+}
 #paperbag{
   position: absolute;
   width: 700px;
@@ -90,7 +100,7 @@ input{
   position: absolute;
   top: 50%;
   left: 53%;
-  transform: translate(-50%, -50%);
+  transform: translate(-60%, -50%);
   width: 13%;}
 /*생일카드*/
 #envelope{
@@ -133,6 +143,9 @@ input{
 }
 
 @media screen and (max-width: 450px){
+  #alert{
+  font-size: 40%;
+  }
   #envelope{
     display: none;
     position: absolute;
