@@ -28,6 +28,8 @@ input{
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 300;
   font-size: 8vw;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 #main2{
   padding: 20px 30px;
