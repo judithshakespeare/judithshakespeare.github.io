@@ -13,18 +13,20 @@ $(document).ready(function(){
         items[1] = "<img id='sneakers' src='assets/images/sneakers.png'>";
         items[2] = "<img id='book' src='assets/images/book.jpg'>";
         items[3] = "<img id='badge1' src='assets/images/badge1.png'>";
-        items[4] = "<img id='badge2' src='assets/images/badge2.png'>";      
+        items[4] = "<img id='badge2' src='assets/images/badge2.png'>";
+        items[5] = "<img id='badge2' src='assets/images/book2.jpg'>";
+
         $("#main2").click(function(e){
             count++;
             if(count==1){
             document.querySelector('#items').innerHTML = randomItem(items);
             function randomItem(a){return a[Math.floor(Math.random() * a.length)];};
             $("#paperbag").hide();
-            $("#alert").hide();
         }else if(count==2){
             setTimeout(function(){
                 // $("#items").fadeOut(1200);
             $("#envelope").fadeIn(1500);},1200);
+            $("#alert").hide();
         }else if(count==3){
             $("#envelopeOpen").fadeIn(900);
             setTimeout(function(){
