@@ -96,12 +96,19 @@ input{
   transform: translate(-50%, -50%);
   width: 200px;
   box-shadow: 3px 2px 3px 1px #aaaaaa;}
-#badge1, #badge2{
+#badge1{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-60%, -50%);
+  width: 13%;}
+#badge2{
   position: absolute;
   top: 50%;
   left: 53%;
   transform: translate(-60%, -50%);
-  width: 13%;}
+  width: 13%;
+}
 /*생일카드*/
 #envelope{
   display: none;
@@ -134,7 +141,7 @@ input{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 40px;
+  padding: 30px;
   text-align: center;
   word-break: keep-all;
   font-weight: 400; 
