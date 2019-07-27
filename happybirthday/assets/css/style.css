@@ -89,7 +89,7 @@ input{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 30%;}
-#book{
+#book, #book2{
   position: absolute;
   top: 50%;
   left: 50%;
