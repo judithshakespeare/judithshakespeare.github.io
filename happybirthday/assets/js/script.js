@@ -26,7 +26,7 @@ $(document).ready(function(){
         }else if(count==2){
             setTimeout(function(){
                 // $("#items").fadeOut(1200);
-            $("#envelope").fadeIn(1500);},1200);
+            $("#envelope").fadeIn(1300);},1000);
         }else if(count==3){
             $("#envelopeOpen").fadeIn(900);
             setTimeout(function(){
@@ -36,6 +36,7 @@ $(document).ready(function(){
                     birthdayCard();
                 },2000);
             $("#envelope").fadeOut(850);
+            window.setTimeout('window.location.reload()',100000); //60초마다 새로고침
         }
         else{};
     });
