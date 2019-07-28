@@ -2,11 +2,34 @@ function input(){
     setTimeout(function(){
         $("#main2").fadeIn(2000);
         $("#paperbag").show();
-        $("#alert").show();
         $("#main1").hide();},1000);
 }
+
+$("#paper").click(function(){
+    $("#birthdayCard").fadeOut(900);
+    $("#paper").fadeOut(1200);
+    setTimeout(function(){
+    $("#envelopeOpen").fadeOut(1500);
+    $("#envelope").fadeIn(1300);
+    },1500);
+    setTimeout(function(){
+    $("#alert").show();},2800);
+    window.setTimeout('window.location.reload()',45000);
+});    
+
+$("#birthdayCard").click(function(){
+    $("#birthdayCard").fadeOut(900);
+    $("#paper").fadeOut(1200);
+    setTimeout(function(){
+    $("#envelopeOpen").fadeOut(1500);
+    $("#envelope").fadeIn(1300);
+    },1500);
+    setTimeout(function(){
+    $("#alert").show();},2800);
+    window.setTimeout('window.location.reload()',100000);
+});  
+
 $(document).ready(function(){
-    $(function(){
         var count = 0;
         var items = new Array();
         items[0] = "<img id='tulip' src='assets/images/tulip.png'>";
@@ -15,6 +38,7 @@ $(document).ready(function(){
         items[3] = "<img id='badge1' src='assets/images/badge1.png'>";
         items[4] = "<img id='badge2' src='assets/images/badge2.png'>";
         items[5] = "<img id='book2' src='assets/images/book2.jpg'>";
+        items[6] = "<img id='matches' src='assets/images/matches.png'>";
 
         $("#main2").click(function(e){
             count++;
@@ -22,24 +46,20 @@ $(document).ready(function(){
             document.querySelector('#items').innerHTML = randomItem(items);
             function randomItem(a){return a[Math.floor(Math.random() * a.length)];};
             $("#paperbag").hide();
-            $("#alert").hide();
-        }else if(count==2){
-            setTimeout(function(){
-                // $("#items").fadeOut(1200);
-            $("#envelope").fadeIn(1300);},1000);
-        }else if(count==3){
-            $("#envelopeOpen").fadeIn(900);
-            setTimeout(function(){
-                $("#paper").fadeIn(1000);
-                    // $("#background").fadeIn(2000);
-                    $("#birthdayCard").fadeIn(2000);
-                    birthdayCard();
-                },2000);
-            $("#envelope").fadeOut(850);
-            window.setTimeout('window.location.reload()',100000); //60초마다 새로고침
-        }
-        else{};
-    });
+            }else if(count==2){
+                setTimeout(function(){
+                    // $("#items").fadeOut(1200);
+                $("#envelope").fadeIn(1100);},1000);
+            }else if(count==3){
+                $("#envelope").fadeOut(850);
+                $("#envelopeOpen").fadeIn(900);
+                setTimeout(function(){
+                    $("#paper").fadeIn(1000);
+                    $("#birthdayCard").fadeIn(1800);
+                    birthdayCard();},2000);
+            }else if(count==4){
+            }
+            else{};
     });
 });
 
