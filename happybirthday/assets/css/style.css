@@ -39,16 +39,6 @@ input{
   top: 0;
   left: 0;
 }
-#alert{
-  display: none;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 10px;
-  font-weight: 400;
-  z-index: 4;
-}
 #paperbag{
   position: absolute;
   width: 700px;
@@ -92,7 +82,7 @@ input{
 #sneakers{
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 48%;
   transform: translate(-50%, -50%);
   width: 30%;
   cursor: pointer;
@@ -109,7 +99,7 @@ input{
 #badge1{
   position: absolute;
   top: 50%;
-  left: 47%;
+  left: 48%;
   transform: translate(-50%, -50%);
   width: 13%;
   cursor: pointer;
@@ -120,6 +110,14 @@ input{
   left: 53%;
   transform: translate(-60%, -50%);
   width: 13%;
+  cursor: pointer;
+}
+#matches{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18%;
   cursor: pointer;
 }
 /*생일카드*/
@@ -147,6 +145,7 @@ input{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 #birthdayCard{
   display: none;
@@ -155,17 +154,35 @@ input{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 50px;
+  padding: 60px;
   text-align: center;
   word-break: keep-all;
   font-weight: 400; 
   font-size: 15px;
   line-height: 150%;
 }
+#alert{
+  display: none;
+  position: absolute;
+  width: 300px;
+  padding: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba( 255, 255, 255, 0.5 );
+  text-align: center;
+  word-break: keep-all;
+  font-weight: 400; 
+  font-size: 12px;
+  line-height: 150%;
+}
 
 @media screen and (max-width: 450px){
   #alert{
-  font-size: 40%;
+    width: 70%;
+    padding: 20px;
+    font-size: 50%;
+    line-height: 150%;
   }
   #envelope{
     display: none;
@@ -204,10 +221,17 @@ input{
     font-weight: 400; 
     font-size: 55%;
     line-height: 150%;
+    cursor: pointer;
   }
 }
 
 @media screen and (min-width: 450px) and (max-width: 736px){
+  #alert{
+    width: 35%;
+    padding: 20px;
+    font-size: 20%;
+    line-height: 150%;
+  }
   #paperbag{
   position: absolute;
   width: 400px;
