@@ -20,15 +20,14 @@ img,video {max-width: 100%;}
 /**/
 input{
   outline: none;
-/*  border-width: 0 0 2px;
-  border-color: black;*/
   border: none;
   border-bottom: .25vw solid black;
   width: 30%;
-  line-height: 1;
+  line-height: 1em;
+  height: 9.4vw;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 300;
-  font-size: 7vw;
+  font-size: 6.9vw;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
