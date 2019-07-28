@@ -19,18 +19,18 @@ body{
 img,video {max-width: 100%;}
 /**/
 input{
-  outline: 0;
+/*   outline: 0;
   border-width: 0 0 2px;
   border-color: black;
-/*  border: none;
-  border-bottom: .25vw solid black;*/
+  border: none;
+  border-bottom: .25vw solid black;
   width: 30%;
-/*   height: 9.5vw; */
+  height: 9.5vw;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 300;
-  font-size: 7vw;
+  font-size: 7vw; */
   -webkit-appearance: none;
-/*   -webkit-border-radius: 0; */
+  -webkit-border-radius: 0;
 }
 #main2{
   padding: 20px 30px;
