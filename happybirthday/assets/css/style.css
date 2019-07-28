@@ -30,7 +30,7 @@ input{
   font-weight: 300;
   font-size: 7vw;
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
+/*   -webkit-border-radius: 0; */
 }
 #main2{
   padding: 20px 30px;
