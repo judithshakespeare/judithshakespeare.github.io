@@ -34,14 +34,15 @@ $("#birthdayCard").click(function(){
 $(document).ready(function(){
         var count = 0;
         var items = new Array();
-        items[0] = "<img id='tulip' src='assets/images/tulip.png'>";
-        items[1] = "<img id='sneakers' src='assets/images/sneakers.png'>";
-        items[2] = "<img id='book' src='assets/images/book.jpg'>";
-        items[3] = "<img id='badge1' src='assets/images/badge1.png'>";
-        items[4] = "<img id='badge2' src='assets/images/badge2.png'>";
-        items[5] = "<img id='book2' src='assets/images/book2.jpg'>";
-        items[6] = "<img id='matches' src='assets/images/matches.png'>";
-        items[7] = "<img id='comic' src='assets/images/comic.jpg'>";
+        items[0] = "<img class='items' id='tulip' src='assets/images/tulip.png'>";
+        items[1] = "<img class='items' id='sneakers' src='assets/images/sneakers.png'>";
+        items[2] = "<img class='items' id='book' src='assets/images/book.jpg'>";
+        items[3] = "<img class='items' id='badge1' src='assets/images/badge1.png'>";
+        items[4] = "<img class='items' id='badge2' src='assets/images/badge2.png'>";
+        items[5] = "<img class='items' id='book2' src='assets/images/book2.jpg'>";
+        items[6] = "<img class='items' id='matches' src='assets/images/matches.png'>";
+        items[7] = "<img class='items' id='comic' src='assets/images/comic.jpg'>";
+        items[8] = "<img class='items' id='moomin' src='assets/images/moomin.png'>";
 
         $("#main2").click(function(e){
             count++;
@@ -52,8 +53,9 @@ $(document).ready(function(){
             }else if(count==2){
                 setTimeout(function(){
                     // $("#items").fadeOut(1200);
-                $("#envelope").fadeIn(1100);
-            $("#items").fadeOut(1100);},1000);
+            $("#items").fadeOut(1100);
+            $("#envelope").fadeIn(1100);
+            },1000);
                 // setTimeout(function(){
                 //     $("#items").fadeOut(1100);},2000);
             }else if(count==3){
