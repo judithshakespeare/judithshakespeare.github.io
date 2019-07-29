@@ -13,8 +13,9 @@ $("#paper").click(function(){
     $("#envelope").fadeIn(1300);
     },1500);
     setTimeout(function(){
-    $("#alert").show();},2800);
-    window.setTimeout('window.location.reload()',45000);
+    $("#alert").show();
+    $("#main2").hide(2000);},2800);
+    window.setTimeout('window.location.reload()',15000);
 });    
 
 $("#birthdayCard").click(function(){
@@ -25,9 +26,10 @@ $("#birthdayCard").click(function(){
     $("#envelope").fadeIn(1300);
     },1500);
     setTimeout(function(){
-    $("#alert").show();},2800);
-    window.setTimeout('window.location.reload()',100000);
-});  
+    $("#alert").fadeIn(1500);
+    $("#main2").fadeOut(1200);},4000);
+    window.setTimeout('window.location.reload()',15000);
+});    
 
 $(document).ready(function(){
         var count = 0;
@@ -49,7 +51,10 @@ $(document).ready(function(){
             }else if(count==2){
                 setTimeout(function(){
                     // $("#items").fadeOut(1200);
-                $("#envelope").fadeIn(1100);},1000);
+                $("#envelope").fadeIn(1100);
+            $("#items").fadeOut(1100);},1000);
+                // setTimeout(function(){
+                //     $("#items").fadeOut(1100);},2000);
             }else if(count==3){
                 $("#envelope").fadeOut(850);
                 $("#envelopeOpen").fadeIn(900);
@@ -57,9 +62,7 @@ $(document).ready(function(){
                     $("#paper").fadeIn(1000);
                     $("#birthdayCard").fadeIn(1800);
                     birthdayCard();},2000);
-            }else if(count==4){
-            }
-            else{};
+            }else{};
     });
 });
 
