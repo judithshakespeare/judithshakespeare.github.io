@@ -13,7 +13,7 @@ body{
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 300;
   font-size: 7vw;
-  line-height: 11vw;
+  line-height: 9.5vw;
   overflow: hidden;}
 *, *:before, *:after {box-sizing: inherit;}
 img,video {max-width: 100%;}
@@ -160,7 +160,7 @@ input{
   word-break: keep-all;
   font-weight: 400; 
   font-size: 15px;
-  line-height: 150%;
+  line-height: 153%;
 }
 #alert{
   display: none;
@@ -170,12 +170,12 @@ input{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba( 255, 255, 255, 0.5 );
+/*  background-color: rgba( 255, 255, 255, 0.5 );*/
   text-align: center;
   word-break: keep-all;
   font-weight: 400; 
   font-size: 12px;
-  line-height: 150%;
+  line-height: 153%;
 }
 
 @media screen and (max-width: 450px){
@@ -183,7 +183,7 @@ input{
     width: 70%;
     padding: 20px;
     font-size: 50%;
-    line-height: 150%;
+    line-height: 153%;
   }
   #envelope{
     display: none;
