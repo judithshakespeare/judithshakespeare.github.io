@@ -88,7 +88,7 @@ input{
   width: 30%;
   cursor: pointer;
 }
-#book, #book2{
+#book, #book2, #comic{
   position: absolute;
   top: 50%;
   left: 50%;
