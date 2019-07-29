@@ -9,11 +9,11 @@ body{
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 20px 30px;
+  padding: 18px 28px;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 300;
-  font-size: 7vw;
-  line-height: 9.5vw;
+  font-size: 6.3vw;
+  line-height: 10vw;
   overflow: hidden;}
 *, *:before, *:after {box-sizing: inherit;}
 img,video {max-width: 100%;}
@@ -24,10 +24,10 @@ input{
   border-bottom: .25vw solid black;
   width: 30%;
   line-height: 1em;
-  height: 11vw;
+  height: 9.8vw;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 300;
-  font-size: 6.9vw;
+  font-size: 6.2vw;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
@@ -159,7 +159,7 @@ input{
   text-align: center;
   word-break: keep-all;
   font-weight: 400; 
-  font-size: 15px;
+  font-size: 13px;
   line-height: 153%;
 }
 #alert{
