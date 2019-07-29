@@ -41,6 +41,7 @@ $(document).ready(function(){
         items[4] = "<img id='badge2' src='assets/images/badge2.png'>";
         items[5] = "<img id='book2' src='assets/images/book2.jpg'>";
         items[6] = "<img id='matches' src='assets/images/matches.png'>";
+        items[7] = "<img id='comic' src='assets/images/comic.jpg'>";
 
         $("#main2").click(function(e){
             count++;
