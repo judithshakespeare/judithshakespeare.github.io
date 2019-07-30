@@ -67,7 +67,6 @@ input{
 .items{
   position: absolute;
   left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
@@ -77,27 +76,33 @@ input{
   transform: translate(-50%, -0%);
 }
 #sneakers{
+    top: 50%;
   left: 48%;
   width: 30%;
 }
 #book, #book2, #comic{
+    top: 50%;
   width: 250px;
   box-shadow: 3px 2px 3px 1px #aaaaaa;
 }
 #badge1{
+    top: 50%;
   left: 48%;
   transform: translate(-50%, -50%);
   width: 13%;
 }
 #badge2{
+    top: 50%;
   left: 53%;
   transform: translate(-60%, -50%);
   width: 13%;
 }
 #matches{
+    top: 50%;
   width: 18%;
 }
 #moomin{
+    top: 50%;
   width: 30%;
 }
 /*생일카드*/
@@ -144,7 +149,7 @@ input{
 #alert{
   display: none;
   position: absolute;
-  width: 300px;
+  width: 80%;
   padding: 50px;
   top: 50%;
   left: 50%;
@@ -154,7 +159,7 @@ input{
   word-break: keep-all;
   font-weight: 400; 
   font-size: 12px;
-  line-height: 153%;
+  line-height: 154%;
 }
 
 @media screen and (max-width: 450px){
@@ -206,12 +211,12 @@ input{
 }
 
 @media screen and (min-width: 450px) and (max-width: 736px){
-  #alert{
+/*  #alert{
     width: 35%;
     padding: 20px;
     font-size: 20%;
-    line-height: 150%;
-  }
+    line-height: 153%;
+  }*/
   #paperbag{
   position: absolute;
   width: 400px;
