@@ -1,77 +1,68 @@
 function input(){
     setTimeout(function(){
         $("#main2").fadeIn(2000);
-        $("#paperbag").show(0);
-        $("#main1").hide();},1400);
+        $("#paperbag").show();
+        $("#main1").hide();},1200);
     setTimeout(function(){
-        $('#day').blur();},1900);
+        $('#day').blur();},2000);
 }
 
-$("#paper").click(function(){
-    $("#birthdayCard").fadeOut(900);
-    $("#paper").fadeOut(1200);
-    setTimeout(function(){
-    $("#envelopeOpen").hide(0);
-    $("#envelope2").show(0);
-    },3000);
-    setTimeout(function(){
-    $("#alert").show();
-    $("#main2").hide(0);},2800);
-    window.setTimeout('window.location.reload()',15000);
-});    
-
-$("#birthdayCard").click(function(){
-    $("#birthdayCard").fadeOut(900);
-    $("#paper").fadeOut(1200);
-    setTimeout(function(){
-    $("#envelopeOpen").hide(1500);
-    $("#envelope2").show(1300);
-    },3000);
-    setTimeout(function(){
-    $("#alert").show(1800);
-    $("#main2").hide(1400);},5000);
-    window.setTimeout('window.location.reload()',15000);
-
-});    
-
 $(document).ready(function(){
-        var count = 0;
-        var items = new Array();
-        items[0] = "<img class='items' id='tulip' src='assets/images/tulip.png'>";
-        items[1] = "<img class='items' id='sneakers' src='assets/images/sneakers.png'>";
-        items[2] = "<img class='items' id='book' src='assets/images/book.jpg'>";
-        items[3] = "<img class='items' id='badge1' src='assets/images/badge1.png'>";
-        items[4] = "<img class='items' id='badge2' src='assets/images/badge2.png'>";
-        items[5] = "<img class='items' id='book2' src='assets/images/book2.jpg'>";
-        items[6] = "<img class='items' id='matches' src='assets/images/matches.png'>";
-        items[7] = "<img class='items' id='comic' src='assets/images/comic.jpg'>";
-        items[8] = "<img class='items' id='moomin' src='assets/images/moomin.png'>";
+    var count = 0;
+    var items = new Array();
+    items[0] = "<img class='items' id='tulip' src='assets/images/tulip.png'>";
+    items[1] = "<img class='items' id='sneakers' src='assets/images/sneakers.png'>";
+    items[2] = "<img class='items' id='book' src='assets/images/book.jpg'>";
+    items[3] = "<img class='items' id='badge1' src='assets/images/badge1.png'>";
+    items[4] = "<img class='items' id='badge2' src='assets/images/badge2.png'>";
+    items[5] = "<img class='items' id='book2' src='assets/images/book2.jpg'>";
+    items[6] = "<img class='items' id='matches' src='assets/images/matches.png'>";
+    items[7] = "<img class='items' id='comic' src='assets/images/comic.jpg'>";
+    items[8] = "<img class='items' id='moomin' src='assets/images/moomin.png'>";
 
-        $("#paperbag").click(function(e){
-            document.querySelector('#items').innerHTML = randomItem(items);
-            function randomItem(a){return a[Math.floor(Math.random() * a.length)];};
-            $("#paperbag").hide();
-            setTimeout(function(){
-                $("#items").fadeOut(1100);
-                $("#envelope").fadeIn(1200);
-            },3000);
-        });
-        $("#envelope").click(function(e){
-            $("#envelope").fadeOut(850);
-                $("#envelopeOpen").fadeIn(900);
-                setTimeout(function(){
-                    $("#paper").fadeIn(1000);
-                    $("#birthdayCard").fadeIn(1800);
-                    birthdayCard();},2000);
-
-            // count++;
-            // if(count==1){
-            
-            // }else if(count==2){
-                
-            // }else if(count==3){
-            // }else{};
+    $("#paperbag").click(function(e){
+        document.querySelector('#items').innerHTML = randomItem(items);
+        function randomItem(a){return a[Math.floor(Math.random() * a.length)];};
+        $("#paperbag").hide();
+        setTimeout(function(){
+            $("#items").fadeOut(1100);
+            $("#envelope").fadeIn(1200);
+        },3000);
     });
+    $("#envelope").click(function(e){
+        $("#envelope").fadeOut(850);
+        $("#envelopeOpen").fadeIn(900);
+        setTimeout(function(){
+            $("#paper").fadeIn(1000);
+            $("#birthdayCard").fadeIn(1800);
+            birthdayCard();},2000);
+    });
+
+    $("#paper").click(function(){
+        $("#birthdayCard").fadeOut(900);
+        $("#paper").fadeOut(1200);
+        setTimeout(function(){
+            $("#envelopeOpen").fadeOut(1500);
+            $("#envelope").fadeIn(1300);
+        },1500);
+        setTimeout(function(){
+            $("#alert").show();
+            $("#main2").hide(2000);},2800);
+        window.setTimeout('window.location.reload()',15000);
+    });    
+
+    $("#birthdayCard").click(function(){
+        $("#birthdayCard").fadeOut(900);
+        $("#paper").fadeOut(1200);
+        setTimeout(function(){
+            $("#envelopeOpen").fadeOut(1500);
+            $("#envelope2").fadeIn(1300);
+        },1500);
+        setTimeout(function(){
+            $("#alert").fadeIn(1500);
+            $("#main2").fadeOut(1200);},4000);
+        window.setTimeout('window.location.reload()',15000);
+    });  
 });
 
 function birthdayCard(){
@@ -183,7 +174,7 @@ happyBirthDay[20] = "너는 내가 끝끝내 지키고 싶은 사람이야.<br>�
 happyBirthDay[21] = "앞으로의 날들이 아프지 않을 거라고 장담할 수 없고 그렇게 하고 싶지 않지만, 나는 너의 아픈 날들에 위로가 되는 사람이고 싶어. 나중에 돌이켜 봤을 때 기쁜 순간에 함께 했던 사람이고 싶고.<br><br>생일 축하해."    ;
 happyBirthDay[22] = "무엇이 되지 않아도<br>너는 충분히 사랑받을 만한 사람이란다.";
 
-    document.querySelector('#happyBirthDay').innerHTML = randomItem(happyBirthDay) + '<br/>';
+document.querySelector('#happyBirthDay').innerHTML = randomItem(happyBirthDay) + '<br/>';
 
 //랜덤
 function randomItem(a){
