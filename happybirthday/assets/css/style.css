@@ -125,7 +125,7 @@ input{
 #envelope2{
   display: none;
   position: absolute;
-  width:500px;
+  width: 500px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -160,7 +160,7 @@ input{
   text-align: center;
   word-break: keep-all;
   font-weight: 400; 
-  font-size: 13px;
+  font-size: 14px;
   line-height: 153%;
 }
 #alert{
@@ -175,7 +175,7 @@ input{
   text-align: center;
   word-break: keep-all;
   font-weight: 400; 
-  font-size: 13px;
+  font-size: 14px;
   line-height: 154%;
 }
 
