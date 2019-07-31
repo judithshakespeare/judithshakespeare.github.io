@@ -1,9 +1,10 @@
 function input(){
-    $('#day').blur();
     setTimeout(function(){
         $("#main2").fadeIn(2000);
         $("#paperbag").show();
         $("#main1").hide();},1000);
+    setTimeout(function(){
+        $('#day').blur();},1200);
 }
 
 $("#paper").click(function(){
@@ -45,9 +46,7 @@ $(document).ready(function(){
         items[7] = "<img class='items' id='comic' src='assets/images/comic.jpg'>";
         items[8] = "<img class='items' id='moomin' src='assets/images/moomin.png'>";
 
-        $("#main2").click(function(e){
-            count++;
-            if(count==1){
+        $("#paperbag").click(function(e){
             document.querySelector('#items').innerHTML = randomItem(items);
             function randomItem(a){return a[Math.floor(Math.random() * a.length)];};
             $("#paperbag").hide();
@@ -55,15 +54,22 @@ $(document).ready(function(){
                 $("#items").fadeOut(1100);
                 $("#envelope").fadeIn(1200);
             },1900);
-            }else if(count==2){
-                $("#envelope").fadeOut(850);
+        });
+        $("#envelope").click(function(e){
+            $("#envelope").fadeOut(850);
                 $("#envelopeOpen").fadeIn(900);
                 setTimeout(function(){
                     $("#paper").fadeIn(1000);
                     $("#birthdayCard").fadeIn(1800);
                     birthdayCard();},2000);
-            }else if(count==3){
-            }else{};
+
+            // count++;
+            // if(count==1){
+            
+            // }else if(count==2){
+                
+            // }else if(count==3){
+            // }else{};
     });
 });
 
