@@ -53,8 +53,8 @@ $(document).ready(function(){
             $("#paperbag").hide();
             setTimeout(function(){
                 $("#items").fadeOut(1100);
-                $("#envelope").fadeIn(1100);
-            },1800);
+                $("#envelope").fadeIn(1200);
+            },1900);
             }else if(count==2){
                 $("#envelope").fadeOut(850);
                 $("#envelopeOpen").fadeIn(900);
