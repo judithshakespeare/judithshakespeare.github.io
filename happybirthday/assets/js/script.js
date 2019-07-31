@@ -5,7 +5,7 @@ function input(){
         $("#main1").hide();},1200);
     setTimeout(function(){
         $('#day').blur();},2000);
-}
+};
 
 $(document).ready(function(){
     var count = 0;
@@ -26,41 +26,41 @@ $(document).ready(function(){
         $("#paperbag").hide();
         setTimeout(function(){
             $("#items").fadeOut(1100);
-            $("#envelope").fadeIn(1200);
+            $("#envelope").show();
         },3000);
     });
+
     $("#envelope").click(function(e){
-        $("#envelope").fadeOut(850);
-        $("#envelopeOpen").fadeIn(900);
+        $("#envelope").hide(0);
+        $("#envelopeOpen").show(0);
         setTimeout(function(){
-            $("#paper").fadeIn(1000);
-            $("#birthdayCard").fadeIn(1800);
-            birthdayCard();},2000);
+        $("#paper").show(0);
+        $("#birthdayCard").show(0);
+        birthdayCard();
+        },2000);
     });
 
     $("#paper").click(function(){
-        $("#birthdayCard").fadeOut(900);
-        $("#paper").fadeOut(1200);
-        setTimeout(function(){
-            $("#envelopeOpen").fadeOut(1500);
-            $("#envelope").fadeIn(1300);
-        },1500);
+        $("#birthdayCard").hide(0);
+        $("#paper").hide(0);
+        $("#envelopeOpen").hide(0);
+        $("#envelope2").show(0);
         setTimeout(function(){
             $("#alert").show();
-            $("#main2").hide(2000);},2800);
+            $("#main2").hide(0);
+        },5000);
         window.setTimeout('window.location.reload()',15000);
     });    
 
     $("#birthdayCard").click(function(){
-        $("#birthdayCard").fadeOut(900);
-        $("#paper").fadeOut(1200);
+        $("#birthdayCard").hide(0);
+        $("#paper").hide(0);
+        $("#envelopeOpen").hide(0);
+        $("#envelope2").show(0);
         setTimeout(function(){
-            $("#envelopeOpen").fadeOut(1500);
-            $("#envelope2").fadeIn(1300);
-        },1500);
-        setTimeout(function(){
-            $("#alert").fadeIn(1500);
-            $("#main2").fadeOut(1200);},4000);
+            $("#alert").show();
+            $("#main2").hide(0);
+        },5000);
         window.setTimeout('window.location.reload()',15000);
     });  
 });
