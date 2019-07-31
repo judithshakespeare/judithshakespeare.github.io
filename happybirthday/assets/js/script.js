@@ -1,7 +1,7 @@
 function input(){
     setTimeout(function(){
         $("#main2").fadeIn(2000);
-        $("#paperbag").show();
+        $("#paperbag").show(0);
         $("#main1").hide();},1400);
     setTimeout(function(){
         $('#day').blur();},1900);
@@ -11,9 +11,9 @@ $("#paper").click(function(){
     $("#birthdayCard").fadeOut(900);
     $("#paper").fadeOut(1200);
     setTimeout(function(){
-    $("#envelopeOpen").hide(0);
-    $("#envelope2").show(0);
-    },3000);
+    $("#envelopeOpen").fadeOut(1500);
+    $("#envelope2").fadeIn(1300);
+    },1500);
     setTimeout(function(){
     $("#alert").show();
     $("#main2").hide(0);},2800);
