@@ -28,10 +28,10 @@ $("#birthdayCard").click(function(){
     $("#envelope2").fadeIn(1300);
     },1500);
     setTimeout(function(){
-    $("#alert").fadeIn(1500);
-    $("#main2").fadeOut(1200);},4000);
+    $("#alert").fadeIn(1800);
+    $("#main2").fadeOut(1400);},4000);
     window.setTimeout('window.location.reload()',15000);
-    
+
 });    
 
 $(document).ready(function(){
