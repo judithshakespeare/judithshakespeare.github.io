@@ -24,7 +24,7 @@ $("#birthdayCard").click(function(){
     $("#paper").fadeOut(1200);
     setTimeout(function(){
     $("#envelopeOpen").fadeOut(1500);
-    $("#envelope").fadeIn(1300);
+    $("#envelope2").fadeIn(1300);
     },1500);
     setTimeout(function(){
     $("#alert").fadeIn(1500);
@@ -51,21 +51,18 @@ $(document).ready(function(){
             document.querySelector('#items').innerHTML = randomItem(items);
             function randomItem(a){return a[Math.floor(Math.random() * a.length)];};
             $("#paperbag").hide();
+            setTimeout(function(){
+                $("#items").fadeOut(1100);
+                $("#envelope").fadeIn(1100);
+            },1800);
             }else if(count==2){
-                setTimeout(function(){
-                    // $("#items").fadeOut(1200);
-            $("#items").fadeOut(1100);
-            $("#envelope").fadeIn(1100);
-            },1000);
-                // setTimeout(function(){
-                //     $("#items").fadeOut(1100);},2000);
-            }else if(count==3){
                 $("#envelope").fadeOut(850);
                 $("#envelopeOpen").fadeIn(900);
                 setTimeout(function(){
                     $("#paper").fadeIn(1000);
                     $("#birthdayCard").fadeIn(1800);
                     birthdayCard();},2000);
+            }else if(count==3){
             }else{};
     });
 });
