@@ -11,12 +11,12 @@ $("#paper").click(function(){
     $("#birthdayCard").fadeOut(900);
     $("#paper").fadeOut(1200);
     setTimeout(function(){
-    $("#envelopeOpen").fadeOut(1500);
-    $("#envelope2").fadeIn(1300);
-    },1500);
+    $("#envelopeOpen").hide(0);
+    $("#envelope2").show(0);
+    },3000);
     setTimeout(function(){
     $("#alert").show();
-    $("#main2").hide(2000);},2800);
+    $("#main2").hide(0);},2800);
     window.setTimeout('window.location.reload()',15000);
 });    
 
