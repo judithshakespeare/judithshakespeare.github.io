@@ -2,7 +2,7 @@ function input(){
     setTimeout(function(){
         $("#main2").fadeIn(2000);
         $("#paperbag").show();
-        $("#main1").hide();},1000);
+        $("#main1").hide();},1200);
     setTimeout(function(){
         $('#day').blur();},2000);
 }
