@@ -192,8 +192,10 @@ input{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
   }
+  #envelope2{
+  width:80%;
+}
   #envelopeOpen{
     display: none;
     position: absolute;
@@ -249,13 +251,11 @@ input{
   to {-webkit-transform: translate(-50%, -50%) rotate(10deg);}
 }
   #envelope{
-    display: none;
-    position: absolute;
     width:45%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
+    #envelope2{
+  width:45%;
+}
   #envelopeOpen{
     display: none;
     position: absolute;
