@@ -53,7 +53,7 @@ $(document).ready(function(){
             setTimeout(function(){
                 $("#items").fadeOut(1100);
                 $("#envelope").fadeIn(1200);
-            },2400);
+            },3000);
         });
         $("#envelope").click(function(e){
             $("#envelope").fadeOut(850);
