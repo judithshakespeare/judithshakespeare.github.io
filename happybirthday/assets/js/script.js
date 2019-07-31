@@ -11,9 +11,9 @@ $("#paper").click(function(){
     $("#birthdayCard").fadeOut(900);
     $("#paper").fadeOut(1200);
     setTimeout(function(){
-    $("#envelopeOpen").fadeOut(1500);
-    $("#envelope2").fadeIn(1300);
-    },1500);
+    $("#envelopeOpen").hide(0);
+    $("#envelope2").show(0);
+    },3000);
     setTimeout(function(){
     $("#alert").show();
     $("#main2").hide(0);},2800);
@@ -24,12 +24,12 @@ $("#birthdayCard").click(function(){
     $("#birthdayCard").fadeOut(900);
     $("#paper").fadeOut(1200);
     setTimeout(function(){
-    $("#envelopeOpen").fadeOut(1500);
-    $("#envelope2").fadeIn(1300);
-    },1500);
+    $("#envelopeOpen").hide(1500);
+    $("#envelope2").show(1300);
+    },3000);
     setTimeout(function(){
-    $("#alert").fadeIn(1800);
-    $("#main2").fadeOut(1400);},4000);
+    $("#alert").show(1800);
+    $("#main2").hide(1400);},5000);
     window.setTimeout('window.location.reload()',15000);
 
 });    
