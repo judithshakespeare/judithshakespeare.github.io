@@ -1,4 +1,5 @@
 function input(){
+    $('#day').blur();
     setTimeout(function(){
         $("#main2").fadeIn(2000);
         $("#paperbag").show();
