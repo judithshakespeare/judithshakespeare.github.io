@@ -2,9 +2,9 @@ function input(){
     setTimeout(function(){
         $("#main2").fadeIn(2000);
         $("#paperbag").show();
-        $("#main1").hide();},1200);
+        $("#main1").hide();},1400);
     setTimeout(function(){
-        $('#day').blur();},2000);
+        $('#day').blur();},1900);
 }
 
 $("#paper").click(function(){
