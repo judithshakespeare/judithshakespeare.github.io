@@ -4,7 +4,7 @@ function input(){
         $("#paperbag").show();
         $("#main1").hide();},1000);
     setTimeout(function(){
-        $('#day').blur();},1600);
+        $('#day').blur();},2000);
 }
 
 $("#paper").click(function(){
