@@ -4,7 +4,7 @@ function input(){
         $("#paperbag").show();
         $("#main1").hide();},1000);
     setTimeout(function(){
-        $('#day').blur();},1200);
+        $('#day').blur();},1600);
 }
 
 $("#paper").click(function(){
@@ -53,7 +53,7 @@ $(document).ready(function(){
             setTimeout(function(){
                 $("#items").fadeOut(1100);
                 $("#envelope").fadeIn(1200);
-            },1900);
+            },2400);
         });
         $("#envelope").click(function(e){
             $("#envelope").fadeOut(850);
