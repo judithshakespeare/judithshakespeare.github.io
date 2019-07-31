@@ -12,7 +12,7 @@ $("#paper").click(function(){
     $("#paper").fadeOut(1200);
     setTimeout(function(){
     $("#envelopeOpen").fadeOut(1500);
-    $("#envelope").fadeIn(1300);
+    $("#envelope2").fadeIn(1300);
     },1500);
     setTimeout(function(){
     $("#alert").show();
