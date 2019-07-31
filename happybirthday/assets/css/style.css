@@ -114,6 +114,22 @@ input{
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+    -webkit-animation: rotation .6s infinite linear;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+@-webkit-keyframes rotation {
+  from {-webkit-transform: translate(-50%, -50%) rotate(-3deg);}
+  to {-webkit-transform: translate(-50%, -50%) rotate(3deg);}
+}
+#envelope2{
+  display: none;
+  position: absolute;
+  width:500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 #envelopeOpen{
   display: none;
@@ -176,6 +192,7 @@ input{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
   }
   #envelopeOpen{
     display: none;
