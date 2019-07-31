@@ -48,7 +48,7 @@ $(document).ready(function(){
         setTimeout(function(){
             $("#alert").show();
             $("#main2").hide(0);
-        },5000);
+        },4000);
         window.setTimeout('window.location.reload()',15000);
     });    
 
@@ -60,7 +60,7 @@ $(document).ready(function(){
         setTimeout(function(){
             $("#alert").show();
             $("#main2").hide(0);
-        },5000);
+        },4000);
         window.setTimeout('window.location.reload()',15000);
     });  
 });
