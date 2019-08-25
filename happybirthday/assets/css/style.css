@@ -12,8 +12,8 @@ body{
   padding: 18px 28px;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 300;
-  font-size: 6.3vw;
-  line-height: 10vw;
+  font-size: 1.5rem;
+  line-height: 160%;
   overflow: hidden;}
 *, *:before, *:after {box-sizing: inherit;}
 img,video {max-width: 100%;}
@@ -21,16 +21,21 @@ img,video {max-width: 100%;}
 input{
   outline: none;
   border: none;
-  border-bottom: .25vw solid black;
-  width: 24%;
-  line-height: 1em;
-  height: 9.8vw;
+  border-bottom: .1rem solid black;
+  width: 4.3rem;
+  line-height: 1.45rem;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 300;
-  font-size: 6.2vw;
+  font-size: 1.45rem;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
+
+#main1{
+  padding-top: 20px;
+  text-align: center;
+}
+
 #main2{
   padding: 20px 30px;
   display: none;
@@ -180,7 +185,7 @@ input{
 }
 
 @media screen and (max-width: 450px){
-  #alert{
+  /*#alert{
     width: 70%;
     padding: 20px;
     font-size: 50%;
@@ -229,10 +234,10 @@ input{
     text-align: center;
     word-break: keep-all;
     font-weight: 400; 
-    font-size: 55%;
+    font-size: 60%;
     line-height: 150%;
     cursor: pointer;
-  }
+  }*/
 }
 
 @media screen and (min-width: 450px) and (max-width: 736px){
@@ -242,7 +247,7 @@ input{
     font-size: 20%;
     line-height: 153%;
   }*/
-  #paperbag{
+/*  #paperbag{
   position: absolute;
   width: 400px;
   top: 50%;
@@ -257,12 +262,12 @@ input{
   to {-webkit-transform: translate(-50%, -50%) rotate(10deg);}
 }
   #envelope{
-    width:45%;
+    width:50%;
   }
 #envelope2{
   display: none;
   position: absolute;
-  width:45%;
+  width:50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -270,7 +275,7 @@ input{
   #envelopeOpen{
     display: none;
     position: absolute;
-    width:45%;
+    width:50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -278,7 +283,7 @@ input{
   #paper{
     display: none;
     position: absolute;
-    width:35%;
+    width:40%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -294,7 +299,7 @@ input{
     text-align: center;
     word-break: keep-all;
     font-weight: 400; 
-    font-size: 22%;
+    font-size: .3em;
     line-height: 150%;
-  }
+  }*/
 }
