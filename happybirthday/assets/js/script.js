@@ -38,31 +38,33 @@ $(document).ready(function(){
         $("#birthdayCard").show(0);
         birthdayCard();
         },2000);
+        setTimeout(function(){
+            $("#birthdayCard").hide(0);
+            $("#paper").hide(0);
+            $("#envelopeOpen").hide(0);
+            $("#envelope2").show(0);
+            setTimeout(function(){
+                $("#alert").show();
+                $("#main2").hide(0);
+        },3000);
+        window.setTimeout('window.location.reload()',15000);
+        },7000);
     });
 
-    $("#paper").click(function(){
-        $("#birthdayCard").hide(0);
-        $("#paper").hide(0);
-        $("#envelopeOpen").hide(0);
-        $("#envelope2").show(0);
-        setTimeout(function(){
-            $("#alert").show();
-            $("#main2").hide(0);
-        },4000);
-        window.setTimeout('window.location.reload()',15000);
-    });    
+    // $("#paper").click(function(){
+    // });    
 
-    $("#birthdayCard").click(function(){
-        $("#birthdayCard").hide(0);
-        $("#paper").hide(0);
-        $("#envelopeOpen").hide(0);
-        $("#envelope2").show(0);
-        setTimeout(function(){
-            $("#alert").show();
-            $("#main2").hide(0);
-        },4000);
-        window.setTimeout('window.location.reload()',15000);
-    });  
+    // $("#birthdayCard").click(function(){
+    //     $("#birthdayCard").hide(0);
+    //     $("#paper").hide(0);
+    //     $("#envelopeOpen").hide(0);
+    //     $("#envelope2").show(0);
+    //     setTimeout(function(){
+    //         $("#alert").show();
+    //         $("#main2").hide(0);
+    //     },4000);
+    //     window.setTimeout('window.location.reload()',15000);
+    // });  
 });
 
 function birthdayCard(){
