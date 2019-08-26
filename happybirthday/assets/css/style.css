@@ -40,7 +40,6 @@ input{
   padding-top: 20px;
   text-align: center;
 }
-
 #main2{
   padding: 20px 30px;
   display: none;
@@ -86,34 +85,34 @@ input{
   transform: translate(-50%, -0%);
 }
 #sneakers{
-    top: 50%;
+  top: 50%;
   left: 48%;
-  width: 30%;
+  width: 50%;
 }
 #book, #book2, #comic{
-    top: 50%;
+  top: 50%;
   width: 250px;
   box-shadow: 3px 2px 3px 1px #aaaaaa;
 }
 #badge1{
-    top: 50%;
+  top: 50%;
   left: 48%;
   transform: translate(-50%, -50%);
-  width: 13%;
+  width: 20%;
 }
 #badge2{
-    top: 50%;
+  top: 50%;
   left: 53%;
   transform: translate(-60%, -50%);
-  width: 13%;
+  width: 20%;
 }
 #matches{
     top: 50%;
-  width: 18%;
+  width: 23%;
 }
 #moomin{
     top: 50%;
-  width: 30%;
+  width: 40%;
 }
 /*생일카드*/
 #envelope{
@@ -141,7 +140,6 @@ input{
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
-
 #envelopeOpen{
   display: none;
   position: absolute;
@@ -153,7 +151,7 @@ input{
 #paper{
   display: none;
   position: absolute;
-  width: 400px;
+  width: 360px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -162,7 +160,7 @@ input{
 #birthdayCard{
   display: none;
   position: absolute;
-  width: 390px;
+  width: 360px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -170,7 +168,7 @@ input{
   text-align: center;
   word-break: keep-all;
   font-weight: 400; 
-  font-size: .9rem;
+  font-size: .8rem;
   line-height: 153%;
 }
 #alert{
@@ -187,19 +185,21 @@ input{
   font-size: 14px;
   line-height: 154%;
 }
-
 @media screen and (max-width: 450px){
   #envelope, #envelope2, #envelopeOpen{
    width:80vw;
-}
-#paper{
-  width:70vw;
-}
-#birthdayCard{
+  }
+  #paper{
     width:70vw;
-/*    padding: 60px;*/
-}
-
+  }
+  #birthdayCard{
+    width:70vw;
+    padding: 30px;
+    font-size: .8rem;
+  }
+  #badge1, #badge2{
+    width:30vw;
+  }
 @media screen and (max-height: 500px){
 #paper{
   position: absolute;
