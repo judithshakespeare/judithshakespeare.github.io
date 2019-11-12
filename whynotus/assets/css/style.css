@@ -1,0 +1,111 @@
+html{
+  width:100%;
+  height:100%;
+  margin: 0;
+}
+body{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+#sticker-wrapper{
+  position: absolute;
+  text-align: center;
+  float: left;
+  background-image: url("../images/backgrounds/stickerbook.jpg");
+  background-attachment: local;
+  background-size: 100% 110%;
+  top: 0;
+  left: 0;
+  width: 27%;
+  height: 100%;
+  overflow: scroll;
+  padding: 15px 20px 10px 9px;
+}
+.imgSticker-wrapper{
+  margin: 10px 0;
+}
+.sticker{
+  width: 110px;
+  margin: 0px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.imgSticker{
+  height: 110px;
+  cursor: pointer;
+}
+.wordSticker{
+  width: 200px;
+}
+
+#diary-wrapper{
+  position: absolute;
+  overflow: hidden;
+  width: 73%;
+  height: 100%;
+  top :0;
+  left: 29%;
+  z-index: 3;
+}
+#notice{
+  position: relative;
+  width: 250px;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#slider-wrapper{
+  position: absolute;
+  width: 73%;
+  height: 100%;
+  top :0;
+  left: 28%;
+}
+#slider{
+  width:100%;
+  height:100%;
+}
+.backgrounds{
+  width: 100%;
+  height:100%;
+  position:absolute;
+}
+#btn-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  margin: 10px;
+}
+.btn{
+  position: absolute;
+  cursor: pointer;
+  z-index: 3;
+}
+#backBtn{
+  position: absolute;
+  bottom: 25px;
+  right: 80px;
+}
+#nextBtn{
+  position: absolute;
+  bottom: 25px;
+  right: 40px;
+}
+.stickerdraggable, .imgStickerdraggable, .wordStickerdraggable{
+  cursor: move;
+  z-index: 4;
+  clear: both;
+}
+#trash{
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  width: 55px;
+  z-index: 3;
+}
