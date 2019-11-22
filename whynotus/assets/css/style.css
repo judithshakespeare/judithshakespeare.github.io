@@ -40,7 +40,7 @@ body{
   position: relative;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 4;
   cursor: pointer;
 }
 .imgSticker{
@@ -160,32 +160,20 @@ body{
   }
   .sticker{
     height: 50%;
-    cursor: pointer;
-    z-index: 3;
   }
   .imgSticker{
     height: 60%;
-    cursor: pointer;
-    z-index: 3;
   }
   .wordSticker{
     height: 70%;
     cursor: pointer;
-    z-index: 3;
   }
   .miniSticker{
     height: 20%;
-    cursor: pointer;
-    z-index: 3;
   }
   #diary-wrapper{
-    position: absolute;
-    overflow: hidden;
     width: 100%;
     height: 75%;
-    top :0;
-    left: 0;
-    z-index: 3;
   }
   #notice{
     position: relative;
@@ -195,56 +183,10 @@ body{
     transform: translate(-50%, -50%);
   }
   #slider-wrapper{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 75%;
-    top :0;
-    left: 0;
-  }
-  #slider{
-    width:100%;
-    height:100%;
-  }
-  .backgrounds{
-    width: 100%;
-    height:100%;
-    position:absolute;
-  }
-  #btn-wrapper{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100%;
-    height:100%;
-    margin: 10px;
-  }
-  .btn{
-    position: absolute;
-    cursor: pointer;
-    z-index: 3;
-  }
-  #backBtn{
-    position: absolute;
-    bottom: 25px;
-    right: 80px;
-  }
-  #nextBtn{
-    position: absolute;
-    bottom: 25px;
-    right: 40px;
-  }
-  .stickerdraggable, .imgStickerdraggable, .wordStickerdraggable{
-    cursor: move;
-    z-index: 4;
-    clear: both;
   }
   #trash{
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    width: 55px;
-    z-index: 3;
+    width: 3rem;
   }
 }
