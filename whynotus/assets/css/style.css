@@ -8,6 +8,9 @@ body{
   height:100%;
   overflow: hidden;
 }
+#sticker-wrapper-mobile-bg{
+  display: none;
+}
 #sticker-wrapper{
   position: absolute;
   text-align: center;
@@ -22,12 +25,18 @@ body{
   overflow: scroll;
   padding: 15px 20px 10px 9px;
 }
+#sticker-wrapper > img{
+  vertical-align: middle;
+}
 .imgSticker-wrapper{
   margin: 10px 0;
 }
+#sticker-wrapper-mobile{
+  display: none;
+}
 .sticker{
-  width: 110px;
-  margin: 0px;
+  width: 100px;
+  margin: 3px;
   position: relative;
   top: 0;
   left: 0;
@@ -39,9 +48,12 @@ body{
   cursor: pointer;
 }
 .wordSticker{
-  width: 200px;
+  width:75%;
 }
-
+.miniSticker{
+  width: 30px;
+  margin: 8px 0px;
+}
 #diary-wrapper{
   position: absolute;
   overflow: hidden;
@@ -108,4 +120,131 @@ body{
   right: 25px;
   width: 55px;
   z-index: 3;
+}
+#bt{
+  margin: 0px 15px 10px 15px;
+}
+
+/*모바일*/
+@media only screen and (max-width: 768px){
+  #sticker-wrapper{
+    display: none;
+  }
+  #sticker-wrapper-mobile-bg{
+    display: block;
+    top: 75%;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    background-image: url("../images/backgrounds/stickerbookmobile.jpg");
+    background-attachment: local;
+    background-size: 100% 100%;
+  }
+  #sticker-wrapper-mobile{
+    display: block;
+    position: absolute;
+    top: 78.5%;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    margin: auto 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  #sticker-wrapper-mobile > img{
+    position: relative;
+    vertical-align: middle;
+    width: auto;
+  }
+  .sticker{
+    height: 50%;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .imgSticker{
+    height: 60%;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .wordSticker{
+    height: 70%;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .miniSticker{
+    height: 20%;
+    cursor: pointer;
+    z-index: 3;
+  }
+  #diary-wrapper{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 75%;
+    top :0;
+    left: 0;
+    z-index: 3;
+  }
+  #notice{
+    position: relative;
+    width: 250px;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #slider-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    top :0;
+    left: 0;
+  }
+  #slider{
+    width:100%;
+    height:100%;
+  }
+  .backgrounds{
+    width: 100%;
+    height:100%;
+    position:absolute;
+  }
+  #btn-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    margin: 10px;
+  }
+  .btn{
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+  }
+  #backBtn{
+    position: absolute;
+    bottom: 25px;
+    right: 80px;
+  }
+  #nextBtn{
+    position: absolute;
+    bottom: 25px;
+    right: 40px;
+  }
+  .stickerdraggable, .imgStickerdraggable, .wordStickerdraggable{
+    cursor: move;
+    z-index: 4;
+    clear: both;
+  }
+  #trash{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    width: 55px;
+    z-index: 3;
+  }
 }
