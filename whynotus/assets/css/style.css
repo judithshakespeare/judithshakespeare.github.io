@@ -168,7 +168,7 @@ body{
     vertical-align: middle;
     width: auto;
   }
-  .sticker{
+  .sticker, .gemSticker{
     height: 50%;
     cursor: pointer;
   }
