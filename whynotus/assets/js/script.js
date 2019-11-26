@@ -125,7 +125,8 @@ $(document).ready(function(){
     });
     $('.wordSticker').click(function(e){
       var clone = $(this).clone().attr('class','wordStickerdraggable').css({
-        'width' : '35%',
+        'width' : 'auto',
+        'height' : '23%',
         'position' : 'absolute',
         'top' : Math.random() * ($('#diary-wrapper').height() - $(this).height() * 1.8),
         'left' : Math.random() * ($('#diary-wrapper').width() - $(this).width() * 2),
@@ -139,12 +140,14 @@ $(document).ready(function(){
       });
       $(".wordStickerdraggable").on('mouseup',function(e){
         $(this).css({
-          width: "35%"
+        'width' : 'auto',
+        'height' : '23%',
         });
       });
       $(".wordStickerdraggable").on('mousedown',function(){
         $(this).css({
-          'width' : "36%",
+        'width' : 'auto',
+        'height' : '24%',
           'z-index' : '6'
         });
         $('#diary-wrapper').children('img').not(this).css('z-index','5');
