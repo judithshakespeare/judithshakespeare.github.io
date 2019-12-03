@@ -8,6 +8,22 @@ body{
   height:100%;
   overflow: hidden;
 }
+#spring{
+  position: absolute;
+  top: 0;
+  left: 27%;
+  transform: translate(-30%, 0%);
+  z-index: 5;
+}
+#springMobile{
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  transform: translate(0%, -45%);
+  width: 100%;
+  z-index: 6;
+}
 #sticker-wrapper-mobile-bg{
   display: none;
 }
@@ -125,6 +141,12 @@ body{
 
 /*모바일*/
 @media only screen and (max-width: 768px){
+  #springMobile{
+    display: block;
+  }
+  #spring{
+    display: none;
+  }
   #btn-wrapper{
   position: absolute;
   top: 0;
