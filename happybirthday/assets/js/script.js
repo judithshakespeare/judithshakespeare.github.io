@@ -1,6 +1,6 @@
 function input(){
     setTimeout(function(){
-        $("#main2").fadeIn(2000);
+        $("#main2").fadeIn(2300);
         $("#envelope").show();
         $("#main1").hide();},1200);
     setTimeout(function(){
