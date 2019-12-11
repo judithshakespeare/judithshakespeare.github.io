@@ -49,70 +49,9 @@ input{
   top: 0;
   left: 0;
 }
-#paperbag{
-  position: absolute;
-  width: 80vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  -webkit-animation: rotation .4s infinite linear;
-  animation-direction: alternate;
-  cursor: pointer;
-}
 @-webkit-keyframes rotation {
   from {-webkit-transform: translate(-50%, -50%) rotate(0deg);}
   to {-webkit-transform: translate(-50%, -50%) rotate(10deg);}
-}
-#items{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-.items{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-#tulip{
-  width: 70%;
-  bottom: 0%;
-  transform: translate(-50%, -0%);
-}
-#sneakers{
-  top: 50%;
-  left: 48%;
-  width: 50%;
-}
-#book, #book2, #comic{
-  top: 50%;
-  width: 250px;
-  box-shadow: 3px 2px 3px 1px #aaaaaa;
-}
-#badge1{
-  top: 50%;
-  left: 48%;
-  transform: translate(-50%, -50%);
-  width: 20%;
-}
-#badge2{
-  top: 50%;
-  left: 53%;
-  transform: translate(-60%, -50%);
-  width: 20%;
-}
-#matches{
-    top: 50%;
-  width: 23%;
-}
-#moomin{
-    top: 50%;
-  width: 30%;
 }
 /*생일카드*/
 #envelope{
@@ -185,7 +124,7 @@ input{
   font-size: 14px;
   line-height: 154%;
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 476px){
   #envelope, #envelope2, #envelopeOpen{
    width:80vw;
   }
@@ -197,24 +136,4 @@ input{
     padding: 30px;
     font-size: .8rem;
   }
-  #badge1, #badge2{
-    width:30vw;
-  }
-@media screen and (max-height: 500px){
-#paper{
-  position: absolute;
-  width:70vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-#birthdayCard{
-  position: absolute;
-    width:70vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@media screen and (min-width: 450px) and (max-width: 736px){
-};
