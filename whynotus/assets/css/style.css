@@ -224,8 +224,8 @@ body{
     position: absolute;
     overflow: hidden;
     width: 120%;
-    height: 95%;
-    top :-20%;
+    height: 85%;
+    top :-10%;
     left: -10%;
   }
   #slider-wrapper{
