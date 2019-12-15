@@ -30,8 +30,8 @@ $(document).ready(function(){
       var clone = $(this).clone().attr('class','stickerdraggable').css({
         'width' : '110px',
         'position' : 'absolute',
-        'top' : Math.random() * ($('#diary-wrapper').height() - $(this).height() * 1.8),
-        'left' : Math.random() * ($('#diary-wrapper').width() - $(this).width() * 2),
+        'top' : Math.random() * ($('#diary-wrapper').height() * 0.8 - $(this).height() * 0.5),
+        'left' : Math.random() * ($('#diary-wrapper').width() * 0.8 - $(this).width() * 2),
         'z-index' : '6'
       });
       $('#diary-wrapper').append(clone);
@@ -63,7 +63,7 @@ $(document).ready(function(){
       var clone = $(this).clone().attr('class','gemStickerdraggable').css({
         'width' : '100px',
         'position' : 'absolute',
-        'top' : Math.random() * ($('#diary-wrapper').height() - $(this).height() * 1.8),
+        'top' : Math.random() * ($('#diary-wrapper').height() * 0.8 - $(this).height() * -0.5),
         'left' : Math.random() * ($('#diary-wrapper').width() - $(this).width() * 2)
       });
       $('#diary-wrapper').append(clone);
@@ -95,8 +95,8 @@ $(document).ready(function(){
       var clone = $(this).clone().attr('class','imgStickerdraggable').css({
         'width' : '25%',
         'position' : 'absolute',
-        'top' : Math.random() * ($('#diary-wrapper').height() - $(this).height() * 1.8),
-        'left' : Math.random() * ($('#diary-wrapper').width() - $(this).width() * 2)
+        'top' : Math.random() * ($('#diary-wrapper').height() * 0.7 - $(this).height() * -0.2),
+        'left' : Math.random() * ($('#diary-wrapper').width() * 0.7 - $(this).width() * 2)
       });
       $('#diary-wrapper').append(clone);
       $(function(e){
@@ -128,7 +128,7 @@ $(document).ready(function(){
         'width' : 'auto',
         'height' : '23%',
         'position' : 'absolute',
-        'top' : Math.random() * ($('#diary-wrapper').height() - $(this).height() * 1.8),
+        'top' : Math.random() * ($('#diary-wrapper').height() - $(this).height() * -0.2),
         'left' : Math.random() * ($('#diary-wrapper').width() - $(this).width() * 2),
       });
       $('#diary-wrapper').append(clone);
@@ -162,8 +162,8 @@ $(document).ready(function(){
       var clone = $(this).clone().attr('class','miniStickerdraggable').css({
         'width' : '2em',
         'position' : 'absolute',
-        'top' : Math.random() * ($('#diary-wrapper').height() - $(this).height() * 1.8),
-        'left' : Math.random() * ($('#diary-wrapper').width() - $(this).width() * 2)
+        'top' : Math.random() * ($('#diary-wrapper').height() - $(this).height() * -0.4),
+        'left' : Math.random() * ($('#diary-wrapper').width() - $(this).width() * -0.5)
       });
       $('#diary-wrapper').append(clone);
       $(function(e){
