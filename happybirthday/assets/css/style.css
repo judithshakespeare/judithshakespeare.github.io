@@ -129,7 +129,6 @@ input{
   cursor: pointer;
 }
 #arrow3{
-  top: 80%;
 }
 @media screen and (max-width: 476px){
   #envelope, #envelope2, #envelopeOpen{
