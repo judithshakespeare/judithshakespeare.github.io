@@ -3,6 +3,8 @@ function input(){
         $("#main2").fadeIn(2700);
         $("#envelope").show();
         $("#main1").hide();},2100);
+    setTimeout(function(){
+        $('#day').blur();},2200);
 };
 
 $(document).ready(function(){
