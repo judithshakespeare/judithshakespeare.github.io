@@ -18,7 +18,7 @@
 		<input type="text" class="inputName" id="fistName"><br>
 		<br>당신의 생일을 알려주세요<br>
 		<input type="number" pattern="\d*" class="inputBday" id="month" autocomplete="off" />월
-		<input type="number" pattern="\d*" class="inputBday" id="day" oninput="input();" autocomplete="off">일<br>
+		<input type="number" pattern="\d*" class="inputBday" id="day" oninput="input();" autocomplete="off" />일<br>
 	</div>
 	<div id="main2">
 		<img id="envelope" src="assets/images/envelope.png">
@@ -30,7 +30,9 @@
 			<div id="happyBirthDay"></div>	
 		</div>
 	</div>
-	<div id="alert">편지 속 문장은 모두 실재했거나, 여전히 실재합니다.</div>
+	<div class="alert">
+	편지 속 문장은 모두 실재했거나, 여전히 실재합니다.
+</div>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
