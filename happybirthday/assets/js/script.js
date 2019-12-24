@@ -1,10 +1,8 @@
 function input(){
     setTimeout(function(){
-        $("#main2").fadeIn(2300);
+        $("#main2").fadeIn(2700);
         $("#envelope").show();
-        $("#main1").hide();},1200);
-    setTimeout(function(){
-        $('#day').blur();},2000);
+        $("#main1").hide();},2100);
 };
 
 $(document).ready(function(){
