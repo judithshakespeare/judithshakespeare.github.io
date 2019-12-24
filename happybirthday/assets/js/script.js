@@ -1,36 +1,65 @@
-function input(){
+function showArrow1(){
     setTimeout(function(){
-        $("#main2").fadeIn(2700);
-        $("#envelope").show();
-        $("#main1").hide();},2000);
-    setTimeout(function(){
-        $('#day').blur();},2500);
+        $("#arrow1").fadeIn();
+        $('#day').blur();
+    },1000);
 };
-
 $(document).ready(function(){
+    $("#arrow1").click(function(){
+        $("#main1").hide();
+        $("#arrow1").hide();
+        setTimeout(function(){
+            $("#main2").fadeIn();
+            $("#envelope").show();
+        },700);
+});
     $("#envelope").click(function(e){
-        $("#envelope").hide(0);
-        $("#envelopeOpen").show(0);
+        $("#envelope").fadeOut();
+        $("#envelopeOpen").fadeIn();
         setTimeout(function(){
-        $("#paper").show(0);
-        $("#birthdayCard").show(0);
-        birthdayCard();
-        },1800);
+            $("#paper").show();
+            $("#birthdayCard").show();
+            birthdayCard();
+        },1500);
         setTimeout(function(){
-            $("#birthdayCard").hide(0);
-            $("#paper").hide(0);
-            $("#envelopeOpen").hide(0);
-            $("#envelope2").show(0);
-        },10000);
-            setTimeout(function(){
-            setTimeout(function(){
-                $(".alert").show();
-                $("#main2").hide(0);
-        },5000);
-        window.setTimeout('window.location.reload()',13000);
-        },8000);
+            $("#arrow2").fadeIn();
+        },3000);
     });
- 
+        $('#arrow2').click(function(){
+            $('#arrow2').hide();
+            $("#birthdayCard").fadeOut();
+            $("#paper").fadeOut();
+            setTimeout(function(){
+                $("#envelopeOpen").fadeOut();
+                $("#envelope2").fadeIn();
+                setTimeout(function(){
+                    $("#arrow3").fadeIn();
+                },1300);
+            },1600);
+        });
+
+        $('#arrow3').click(function(){
+            $('#arrow3').hide()
+            $(".alert").fadeIn();
+            $("#main2").hide();
+            setTimeout(function(){
+                    $("#arrow4").fadeIn();
+                },1400);
+        });
+         $('#arrow4').click(function(){
+                    window.location.reload()
+        });
+
+    //     setTimeout(function(){
+    //         
+    //     },10000);
+    //     setTimeout(function(){
+    //         setTimeout(function(){
+    //            
+    //         },5000);
+    //         
+    // });
+
 });
 
 function birthdayCard(){
@@ -119,7 +148,7 @@ function clickK(mon){
 var happyBirthDay = new Array();
 
 happyBirthDay[0] = "네가 없었으면 안 됐어 나는.<br>지금의 나도 없었을 거야.<br><br>생일 축하해.";
-happyBirthDay[1] = "사람들이 어떻게 이야기하든 나는 있는 그대로의 너를 사랑해.<br><br>생일 축하해.";
+happyBirthDay[1] = "사람들이 어떻게 이야기하든<br>나는 있는 그대로의 너를 사랑해.<br><br>생일 축하해.";
 happyBirthDay[2] = reulReturner3()+". 너는 어디서든 사랑받을 거야.<br><br>생일 축하해.";
 happyBirthDay[3] = "많은 시간 곁에 있지 못하지만, 너를 숨죽여 울게 할 일이 없기를 진심으로 간절히 바라.<br><br>생일 축하한다.";
 happyBirthDay[4] = "지금껏 그래왔던 것처럼 앞으로의<br>특별한, 또 특별하지 않은 날들에<br>네가 있었으면 좋겠어. 어김없이<br>돌아올 " + month + "월 " + day + "일에 또 사랑과<br>축복하는 마음을 함께 담아<br>이렇게 오래 편지를 쓰고 싶다.<br><br>생일 축하해.";
