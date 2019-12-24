@@ -2,9 +2,9 @@ function input(){
     setTimeout(function(){
         $("#main2").fadeIn(2700);
         $("#envelope").show();
-        $("#main1").hide();},2100);
+        $("#main1").hide();},2000);
     setTimeout(function(){
-        $('#day').blur();},2200);
+        $('#day').blur();},2500);
 };
 
 $(document).ready(function(){
@@ -15,18 +15,20 @@ $(document).ready(function(){
         $("#paper").show(0);
         $("#birthdayCard").show(0);
         birthdayCard();
-        },2000);
+        },1800);
         setTimeout(function(){
             $("#birthdayCard").hide(0);
             $("#paper").hide(0);
             $("#envelopeOpen").hide(0);
             $("#envelope2").show(0);
+        },10000);
+            setTimeout(function(){
             setTimeout(function(){
                 $(".alert").show();
                 $("#main2").hide(0);
         },5000);
-        window.setTimeout('window.location.reload()',15000);
-        },7000);
+        window.setTimeout('window.location.reload()',13000);
+        },8000);
     });
  
 });
