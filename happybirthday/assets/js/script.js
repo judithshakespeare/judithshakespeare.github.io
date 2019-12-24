@@ -24,7 +24,7 @@ $(document).ready(function(){
             setTimeout(function(){
                 $(".alert").show();
                 $("#main2").hide(0);
-        },4000);
+        },5000);
         window.setTimeout('window.location.reload()',15000);
         },7000);
     });
