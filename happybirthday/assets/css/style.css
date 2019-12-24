@@ -121,7 +121,7 @@ input{
 .arrow{
   z-index: 3;
   position: absolute;
-  top:70%;
+  bottom: 40px;
   left: 50%;
   transform: translate(-50%, 0);
   display: none;
