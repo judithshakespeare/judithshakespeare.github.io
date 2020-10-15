@@ -40,11 +40,11 @@ $(document).ready(function(){
 		}else if(count == 11){
 			$('#q2a1').after('<div class="q2a" id="q2a2">- 미묘한 몸짓이 없어지고 눈으로 나누는 대화가 중단되면서 갈등과 조화가 만화처럼 변한다.</div>');
 		}else if(count == 12){	
-			$('#q2a2').after('<img class="q2aimg" id="q2a3" src="../img/cow.jpg"/>');
+			$('#q2a2').after('<img class="q2aimg" id="q2a3" src="img/cow.jpg"/>');
 		}else if(count == 13){
-			$('#q2a3').after('<br><img class="q2aimg" id="q2a4" src="../img/zoom-monitor-screen.png"/>');
+			$('#q2a3').after('<br><img class="q2aimg" id="q2a4" src="img/zoom-monitor-screen.png"/>');
 		}else if(count == 14){
-			$('#q2a4').after('<br><img class="q2aimg" id="q2a5" src="../img/mask-campaign.jpg"/>');
+			$('#q2a4').after('<br><img class="q2aimg" id="q2a5" src="img/mask-campaign.jpg"/>');
 			var element = document.querySelector("#q2a4");
 			element.scrollIntoView();
 		}else if(count == 15){
@@ -64,11 +64,11 @@ $(document).ready(function(){
 			var element = document.querySelector("#q4");
 			element.scrollIntoView();
 		}else if(count == 20){
-			$('#q4').after('<br><img class="q4aimg" id="q4a1" src="../img/00.jpg"/><br>');
+			$('#q4').after('<br><img class="q4aimg" id="q4a1" src="img/00.jpg"/><br>');
 		}else if(count == 21){
-			$('#q4a1').after('<br><img class="q4aimg" id="q4a2" src="../img/screen2.png"/><br>');
+			$('#q4a1').after('<br><img class="q4aimg" id="q4a2" src="img/screen2.png"/><br>');
 		}else if(count == 22){
-			$('#q4a2').after('<br><img class="q4aimg" id="q4a3" src="../img/screen3.jpg"/><br><br>');
+			$('#q4a2').after('<br><img class="q4aimg" id="q4a3" src="img/screen3.jpg"/><br><br>');
 			var element = document.querySelector("#q4a2");
 			element.scrollIntoView();
 		}else if(count == 23){
