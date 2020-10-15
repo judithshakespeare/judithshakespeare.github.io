@@ -7,8 +7,8 @@ $(document).ready(function(){
     });
 
 	$("body").click(function(){
+		$(".questions").show();
 		$('#q1box').show();
-		$('#q1').show();
 		$(".main").hide();
 	});
 
