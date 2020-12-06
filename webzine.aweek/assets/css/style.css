@@ -153,6 +153,10 @@ a:active{
   color: black;
 }
 
+a:link{
+  color: black;
+}
+
 .manu-wrapper{
   position: fixed;
   top: 0;
