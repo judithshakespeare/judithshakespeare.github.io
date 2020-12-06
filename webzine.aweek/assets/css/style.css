@@ -7,6 +7,18 @@
     font-display: swap;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+body {
+  -ms-overflow-style:none;
+}
+
 html,
 body,
 p,
@@ -349,4 +361,24 @@ a:link{
   transform: translate(-50%, -50%);
   display: none;
   z-index: 4;
+}
+
+.ifmobile{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: .8rem;
+ }
+
+
+@media screen and (max-width: 600px){
+  .manu-wrapper, .diary-wrapper, .date-wrapper{
+    display: none;
+    }
+
+  .ifmobile{
+    display: block;
+  }
 }
