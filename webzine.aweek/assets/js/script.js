@@ -1,8 +1,8 @@
 window.onload=function(){
     var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
     if (mobile) {
-        alert("모바일 버전 준비중 . . .");
-	$("*").hide();
+    	$("*").hide();
+    	alert("모바일 버전 준비중 . . .");             
     } else {
 
     }
@@ -274,7 +274,7 @@ $(document).ready(function(){
 
 	$(document).on('click', '#diary', function() {
 		$(this).attr('class', 'questions-visited');
-		window.open("diary.html", "diary", "width=300px,height=500px,top=100px,left=500px,scrollbars=yes");
+		window.open("diary.html", "diary", "width=250px,height=400px,top=100px,left=500px,scrollbars=yes");
 	});
 
 });
