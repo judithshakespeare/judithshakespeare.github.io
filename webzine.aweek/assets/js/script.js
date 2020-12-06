@@ -85,14 +85,14 @@ $(document).ready(function(){
 	Nov17diary[3] 	= '<span>우리는 숨듣명에 대해서 생각해봤다. 왜 숨을까? 왜 들을까? 왜 명곡일까? 일단 우리가 그 노래들의 가사를 다 알고 있었다는 점이 아이러니하다. </span>';	
 	Nov17diary[4] 	= '<span id="bf">(기록할 만한 명곡은 나세의 최애곡. 보약 같은 친구. 자네라는 호칭이 정말 기가 막히게 좋다.) </span>';	
 	Nov17diary[5] 	= '<span><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp작업은 생각보다 아주 많이 길어져서, 아침 수업까지 잠깐이라도 잘 시간이 없었다. 분명 2-3시간을 예상했는데 거의 10시간 넘게 마우스를 만지작거렸다. </span>';
-	Nov17diary[6] 	= '<span class="questions" id="work">물론 시간이 중요한 것은 아니고 마음에 들어야 하는데 그렇지가 않아서 좀 답답했다. </span>';
+	Nov17diary[6] 	= '<span class="questions" id="work">물론 시간이 중요한 것은 아니고 마음에 들어야 하는데 그렇지가 않아서 좀 답답했다.</span> ';
 
 	var Nov18diary 	= [];
 	Nov18diary[0] 	= '<span class="questions" id="diary">오늘은 일주일을 기록하는 마지막 날이다. 나는 한동안 이 일주일을 곱씹게 될 것이다. 아마 기록한 것들로 괴로울 거고, 기록하지 못한 것들로 괴로울 거다. 시시한 글이지만 복잡했던 2020년에 대한 기록이 남게 되어 다행이다.</span> ';	
 	Nov18diary[1] 	= '<span class="questions" id="toy">책장을 봤는데 장난감들이 다 넘어져 있다. 왜지? 아까 이불 들었을 때 닿았나. 세우기 귀찮아서 일단 그냥 뒀다.</span> ';
 	Nov18diary[2] 	= '<span>전에 살던 집에서는 넘어진 장난감을 세워도 매번 다시 넘어졌다. 한동안 넘어진 장난감 세우기는 매일의 수행이 됐다. </span>';
 	Nov18diary[3] 	= '<span>시간이 지나서 그 원인을 찾았는데, 드라이기 바람이 너무 강해서 쓰러지는 거였다. 이유를 발견하고 나서는 그냥 장난감을 눕혀놨다. </span>';	
-	Nov18diary[4] 	= '<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="questions" id="name">새로 할 작업을 위한 이름을 생각해봤다. 전에 생각해둔 단어인데 지금 꺼내면 되겠다는 생각이 들었다. </span> ';	
+	Nov18diary[4] 	= '<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="questions" id="name">새로 할 작업을 위한 이름을 생각해봤다. 전에 생각해둔 단어인데 지금 꺼내면 되겠다는 생각이 들었다.</span> ';	
 	Nov18diary[5] 	= '<span class="questions" id="newWork">아직 정리 못 한 작업들이 많은데 새 작업을 하는 게 괜찮을지 모르겠다.</span> ';	
 	Nov18diary[6] 	= '<span>이제 꽤 추운데 눈은 언제 올까. 왠지 올해 눈이 엄청 많이 올 거 같다. 파주의 겨울이 어떨지 궁금하다. </span>';
 	Nov18diary[7] 	= '<span>일단 겨울에 가까워지니 <span id="star">별</span>이 잘 보여서 좋다. </span>';
