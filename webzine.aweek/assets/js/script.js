@@ -1,14 +1,9 @@
-window.onload=function(){
-    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
-    if (mobile) {
-    	$("*").hide();
-    	alert("모바일 버전 준비중 . . .");             
-    } else {
-
-    }
-}
-
 $(document).ready(function(){
+
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$('.manu-wrapper, .diary-wrapper, .date-wrapper').hide();
+		$('.ifmobile').show();
+	};
 
 	$(function(){$(".draggable").draggable();});
 
