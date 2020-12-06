@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'PusKul';
+    src: url('../fonts/Puskul.woff2') format('woff2'),
+    url('../fonts/Puskul.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+/*  height: auto;
+  max-width: 100%;*/
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: left;
+}
+
+html {
+  font-size: ;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: Courier, "Courier New", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+input:focus{
+  outline: none;
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: monospace;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: .75rem;
+  line-height: 1.45;
+  word-break: break-all;
+  text-align: justify;
+  color: black;
+  background-color: yellow;
+  word-spacing: -0.2rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  width: 96%;
+  margin: auto 2%;
+  margin-top: .5rem;
+}
+
+figcaption{
+  text-align: center;
+  font-size: .6rem;
+  margin-bottom: .5rem;
+}
+
+.small{
+  width: 46%;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.icon{
+  width: 20px;
+}
+
+.italic{
+  font-style: oblique;
+}

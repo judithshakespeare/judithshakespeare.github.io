@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'PusKul';
+    src: url('../fonts/Puskul.woff2') format('woff2');
+/*    url('../fonts/Puskul.woff') format('woff');*/
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+/*  height: auto;
+  max-width: 100%;*/
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: left;
+}
+
+html {
+  font-size: ;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: -apple-system, Arial, Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, sans-serif;
+}
+
+input:focus{
+  outline: none;
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1800px;
+  height: 1500px;
+  padding: ;
+  font-size: ;
+  line-height: ;
+  word-break: keep-all;
+  color: black;
+  background-color: #00ff25;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: black;
+}
+
+a:active{
+  color: black;
+}
+
+.manu-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  font-size: .65rem;
+  line-height: 1.4;
+  z-index: 5;
+}
+
+.manu-wrapper ul li{
+  float: left;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.diary-wrapper{
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  width: 300px;
+  height: 60%;
+  background-color: white;
+  box-shadow: 5px 7px 5px #1a6025;
+  padding: 10px;
+  font-size: .8rem;
+  line-height: 1.5;
+  overflow-y: auto;
+  z-index: 4;
+}
+
+.diary-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.diary-wrapper::-webkit-scrollbar-button {
+  display: none;
+}
+
+.diary-wrapper {
+  -ms-overflow-style:none;
+}
+
+.title{
+  text-align: center;
+  font-size: .65rem;
+}
+
+.date-wrapper{
+  position: absolute;
+  top:0;
+  width: 1400px;
+  height: 1500px;
+}
+
+.date-wrapper ul li span{
+  position: absolute;
+  background-color: white;
+  font-size: .65rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.date-wrapper ul li{
+  position: absolute;
+}
+
+.boom{
+  position: absolute;
+  width: 30px;
+}
+
+@keyframes blink {
+  75% {
+    color: #00ff25;
+  }
+
+}
+@-webkit-keyframes blink {
+  75% {
+    color: #00ff25;
+  }
+}
+
+.questions{
+  cursor: help;
+  background-color: #00ff25;
+  z-index: 5;
+  animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite;
+}
+
+.questions-visited{
+  cursor: help;
+  background-color: #00ff25;
+  z-index: 5;
+}
+
+#funnyfont{
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 4;
+}
+
+#star{
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 4;
+}
+
+#blackStar{
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 4;
+}
+
+/*********draggable img********/
+
+.draggable{
+  position: fixed;
+  display: none;
+  width: 180px;
+  z-index: 4;
+  box-shadow: 5px 7px 5px #1a6025;
+}
+
+.resize{
+  width: 75px !important;
+}
+
+.toyImgResize{
+  width: 100px !important;
+}
+
+.fogVideoResize{
+  width: 210px !important;
+}
+
+#christmasImg{
+  bottom: 120px;
+  right: 600px;
+}
+#christmasImg2{
+  bottom: 70px;
+  right: 400px; 
+}
+
+#toyImg{
+  width: 450px;
+  top: 30%;
+  left: 20%; 
+}
+
+#fogVideo{
+  width: 210px;
+  top: 50%;
+  left: 40%; 
+  display: none;
+}
+
+#myHairImg{
+  width: 400px;
+  top: 20%;
+  left: 20%; 
+}
+
+#snowImg{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#starImg{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#plantImg{
+  position: fixed;
+  width: 50px;
+  top: 80%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 4;
+}
