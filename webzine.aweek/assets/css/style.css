@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'PusKul';
-    src:url('../fonts/Puskul.woff2') format('woff2'),
-        url('../fonts/Puskul.woff') format('woff');
+    src:url('../fonts/PusKul.woff2') format('woff2'),
+        url('../fonts/PusKul.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
