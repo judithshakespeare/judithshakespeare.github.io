@@ -9,24 +9,35 @@
 </head>
 <body>
 	<div class="ifmobile">모바일 버전 준비중...</div>
-	<video class="draggable" id="fogVideo" controls>
-		<source src="assets/video/1.mov" type="video/mp4" style="width: 200px;">
-	</video>
-	<img id="plantImg" src="assets/img/plant.png">
-
+	<div class="alert">이 웹사이트는 데모 버전이며,<br>정식 웹사이트는 곧 오픈합니다!<br><br>
+		<button class="enter-button" type="text">OK</button></button>
+	</div>
+	<div class="background"></div>
 	<nav class="manu-wrapper">
 		<ul class="manu-list">
-			<li id="firstweek"><a href="index.html" style="text-shadow: 2px 3px 2px #1a6025;">#1 김희주의 일주일</a></li>
-			<li><a href="help.html" title="about">About</a></li>
+			<li id="firstweek" style="text-shadow: 2px 3px 2px #1a6025;"><a href="index.html" >#1 김희주의 일주일</a></li>
+			<li id="about">About</li>
 			<li></li>
 		</ul>
 	</nav>
+	<div class="about-wrapper">
+		‹웹진: 일주일›은 매 호 한 명의 작업자를 소개합니다.<br>‹웹진: 일주일›에는 작업자가 일주일동안 작성한 일기와 그를 기반으로 한 인터뷰가 담깁니다.<br><br><hr><br>
+		<div class="credit">
+			<b>#1 김희주의 일주일</b><br><br>
+			김희주<br>
+<!-- 			@ee_odd / keemheejoo@gmail.com<br> -->
+			내가 사는 곳에 관심이 많습니다.<br>종이에 애착을 가지고 작업합니다.<br>나무야 미안해.<br><br>
+<!-- 			<a class="insta" href="https://www.instagram.com/ee_ood/" target="_blank">@ee_odd / keemheejoo@gmail.com</a><br><br> --> 
+			인터뷰이: 김희주<br>
+			기획: 김동하<br>
+			웹사이트 개발: 김동하
+		</div>
+	</div>
 	<div class="diary-wrapper">
 		<div class="title">2020.11.12(목) - 11.18(수)</div><br>
 	</div>
 	<div class="date-wrapper">
 		<ul class="Nov12Date-wrapper">
-			<li class="Nov12Date-list"><span class="Nov12Date">2020.11.12</span></li>
 			<li class="Nov12Date-list"><span class="Nov12Date">2020.11.12</span></li>
 			<li class="Nov12Date-list"><span class="Nov12Date">2020.11.12</span></li>
 			<li class="Nov12Date-list"><span class="Nov12Date">2020.11.12</span></li>
@@ -39,8 +50,6 @@
 			<li class="Nov13Date-list"><span class="Nov13Date">2020.11.13</span></li>
 			<li class="Nov13Date-list"><span class="Nov13Date">2020.11.13</span></li>
 			<li class="Nov13Date-list"><span class="Nov13Date">2020.11.13</span></li>
-			<li class="Nov13Date-list"><span class="Nov13Date">2020.11.13</span></li>
-			<li class="Nov13Date-list"><span class="Nov13Date">2020.11.13</span></li>
 		</ul>
 		<ul class="Nov14Date-wrapper">
 			<li class="Nov14Date-list"><span class="Nov14Date">2020.11.14</span></li>
@@ -48,13 +57,8 @@
 			<li class="Nov14Date-list"><span class="Nov14Date">2020.11.14</span></li>
 			<li class="Nov14Date-list"><span class="Nov14Date">2020.11.14</span></li>
 			<li class="Nov14Date-list"><span class="Nov14Date">2020.11.14</span></li>
-			<li class="Nov14Date-list"><span class="Nov14Date">2020.11.14</span></li>
-			<li class="Nov14Date-list"><span class="Nov14Date">2020.11.14</span></li>
-			<li class="Nov14Date-list"><span class="Nov14Date">2020.11.14</span></li>
 		</ul>
 		<ul class="Nov15Date-wrapper">
-			<li class="Nov15Date-list"><span class="Nov15Date">2020.11.15</span></li>
-			<li class="Nov15Date-list"><span class="Nov15Date">2020.11.15</span></li>
 			<li class="Nov15Date-list"><span class="Nov15Date">2020.11.15</span></li>
 			<li class="Nov15Date-list"><span class="Nov15Date">2020.11.15</span></li>
 			<li class="Nov15Date-list"><span class="Nov15Date">2020.11.15</span></li>
@@ -75,7 +79,6 @@
 			<li class="Nov17Date-list"><span class="Nov17Date">2020.11.17</span></li>
 			<li class="Nov17Date-list"><span class="Nov17Date">2020.11.17</span></li>
 			<li class="Nov17Date-list"><span class="Nov17Date">2020.11.17</span></li>
-			<li class="Nov17Date-list"><span class="Nov17Date">2020.11.17</span></li>
 		</ul>
 		<ul class="Nov18Date-wrapper">
 			<li class="Nov18Date-list"><span class="Nov18Date">2020.11.18</span></li>
@@ -84,18 +87,26 @@
 			<li class="Nov18Date-list"><span class="Nov18Date">2020.11.18</span></li>
 			<li class="Nov18Date-list"><span class="Nov18Date">2020.11.18</span></li>
 			<li class="Nov18Date-list"><span class="Nov18Date">2020.11.18</span></li>
-			<li class="Nov18Date-list"><span class="Nov18Date">2020.11.18</span></li>
-			<li class="Nov18Date-list"><span class="Nov18Date">2020.11.18</span></li>
 		</ul>
+		<div class="index-wrapper">
+			<img id="icon" src="assets/img/icon.png">
+			<div class="info">instagram: <a href="https://www.instagram.com/ee_ood/" target="_blank">@ee_odd</a><br>
+				e-mail: <a href="mailto:keemheejoo@gmail.com">keemheejoo@gmail.com</a>
+			</div>
+		</div>
 
 	</div>
-
-	<img class="draggable" id="christmasImg" src="assets/img/christmas.jpg">
-	<img class="draggable" id="christmasImg2" src="assets/img/christmas2.jpg">
-	<img class="draggable" id="toyImg" src="assets/img/toy1.jpg">
-	<img class="draggable" id="myHairImg" src="assets/img/myhair.jpg">
 	<img id="snowImg" src="assets/img/snow.gif">
-	<img id="starImg" src="assets/img/star3.jpg">
+	<div id="starImg"></div>
+
+	<div class="container"></div>
+
+	<div class="sticker-wrapper">
+		<!-- <li class="sticker-list"><img class="draggable" id="sticker1" src="assets/img/sticker/sticker1.jpeg"></li>
+		<li class="sticker-list"><img class="draggable2" id="sticker2" src="assets/img/sticker/sticker2.jpeg"></li>
+		<li class="sticker-list"><img class="draggable2" id="sticker3" src="assets/img/sticker/sticker3.jpeg"></li>
+		<li class="sticker-list"><img class="draggable2" id="sticker4" src="assets/img/sticker/sticker4.jpeg"></li> -->
+	</div>
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/script.js"></script>
