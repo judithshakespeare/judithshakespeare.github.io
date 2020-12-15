@@ -484,3 +484,73 @@ a:link{
     display: block;
   }
 }
+
+/*인터뷰 영역*/
+
+
+.interview-wrapper{
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+.interview-list{
+  position: fixed;
+  width: 240px;
+  height: auto;
+  display: none;
+  background-color: #a7adff;
+  z-index: 6;
+  padding: 10px;
+  font-size: .9rem;
+  line-height: 1.45;
+  word-break: break-all;
+  text-align: justify;
+  color: black;
+  font-family: monospace;
+  right: 320px;
+  z-index: 9;
+  word-spacing: -0.2rem;
+  
+}
+
+.X{
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  font-family: sans-serif;
+  font-size: .4rem;
+/*  background-color: red;*/
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  line-height: 15px;
+  text-align: center;
+  background-image: url('../img/x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #eb7678;
+  cursor: pointer;
+
+}
+
+.interview-title{
+  position: absolute;
+  top: 7px;
+  left: 0; 
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px dotted black;
+  margin-bottom: .3rem;
+}
+
+.interview-text{
+  padding-top: 1.5rem;
+
+}
+
+.bold{
+  font-weight: bold;
+}
