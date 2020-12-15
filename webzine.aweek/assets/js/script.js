@@ -53,7 +53,7 @@ $(document).ready(function(){
 		};
 	});
 
-	if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	if( /Android|webOS|iPhone|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		$('.manu-wrapper, .diary-wrapper, .date-wrapper, .container, .sticker-wrapper').hide();
 		$('.ifmobile').show();
 	};
@@ -252,7 +252,14 @@ $(document).ready(function(){
 
 	$(document).on('click', '#exhibitionmap', function() {
 		$(this).attr('class', 'questions-visited');
-		window.open("exhibitionmap.html", "exhibitionmap", "width=230px,height=250px,top=150px,left=500px,scrollbars=no");
+		$('#interview-exhibitionmap').show();
+
+		var top = $('#exhibitionmap').offset().top;
+		$('#interview-exhibitionmap').css({
+			left : Math.random() * ($('.interview-wrapper').width()),
+			top : Math.random() * ($('.interview-wrapper').height())
+		});
+		// window.open("exhibitionmap.html", "exhibitionmap", "width=230px,height=250px,top=150px,left=500px,scrollbars=no");
 	});
 
 	$(document).on('click', '#designGrammer', function() {
@@ -297,5 +304,9 @@ $(document).ready(function(){
 		window.open("diary.html", "diary", "width=250px,height=400px,top=100px,left=500px,scrollbars=yes");
 		window.open("sogam.html", "sogam", "width=250px,height=250px,top=100px,left=200px,scrollbars=yes");
 	});
+
+	$('.X').click(function(){
+		$(this).parent().hide();
+	})
 	
 });
