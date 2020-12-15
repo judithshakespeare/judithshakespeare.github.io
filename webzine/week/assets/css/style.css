@@ -143,8 +143,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 160vw;
-  height: 140vh;
+  width: 1800px;
+  height: 1200px;
   padding: ;
   font-size: ;
   line-height: ;
@@ -277,8 +277,8 @@ a:link{
 .date-wrapper{
   position: absolute;
   top:0;
-  width: 130vw;
-  height: 140vh;
+  width: 1500px;
+  height: 1100pxs;
 }
 
 .date-wrapper ul li span{
