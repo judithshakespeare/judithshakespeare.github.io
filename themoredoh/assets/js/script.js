@@ -31,6 +31,22 @@ $(document).ready(function(){
 	}else{
 	};
 
+	$(window).on('touchend', function(e){
+
+		var currentPoint = e.originalEvent.changedTouches[0].pageY;
+
+    if(lastPoint != null && lastPoint < currentPoint ){
+        //swiped down
+        console.log('you scrolled up');
+
+    }else if(lastPoint != null && lastPoint > currentPoint){
+        //swiped up
+        console.log('you scrolled down');
+    }
+
+    lastPoint = currentPoint;
+});
+
 	// return false; // this line is only added so the whole page won't scroll in the demo
 });
 });
