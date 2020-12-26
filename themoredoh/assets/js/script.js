@@ -38,12 +38,16 @@ $(window).on('touchend', function(e){
     var currentPoint = e.originalEvent.changedTouches[0].pageY;
 
     if(lastPoint != null && lastPoint < currentPoint ){
-        //swiped down
-        console.log('you scrolled up');
+        if($('.description-wrapper').scrollTop() + $('.description-wrapper').innerHeight() >= $('.description-wrapper')[0].scrollHeight) {
+            $('.description-wrapper').animate({scrollTop: '0px'}, 500);
+        };
+        setTimeout(function() {
+        	$('.description-wrapper').fadeOut();
+        }, 10);
 
     }else if(lastPoint != null && lastPoint > currentPoint){
         //swiped up
-        console.log('you scrolled down');
+        $('.description-wrapper').fadeIn();
     }
 
     lastPoint = currentPoint;
