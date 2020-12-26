@@ -31,9 +31,11 @@ $(document).ready(function(){
 	}else{
 	};
 
-	$(window).on('touchend', function(e){
+var lastPoint = null; //global
 
-		var currentPoint = e.originalEvent.changedTouches[0].pageY;
+$(window).on('touchend', function(e){
+
+    var currentPoint = e.originalEvent.changedTouches[0].pageY;
 
     if(lastPoint != null && lastPoint < currentPoint ){
         //swiped down
