@@ -155,10 +155,6 @@ a {
   cursor: pointer;
 }
 
-main{
-  display: none;
-}
-
 #loading{
   z-index: 999;
   background-color: white;
