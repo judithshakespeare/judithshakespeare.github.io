@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Spoqa Han Sans";
+  font-weight: 400;
+  src: local("Spoqa Han Sans Regular"),
+  url("../fonts/spoqa-han-sans-regular.woff2") format("woff2"),
+  url("../fonts/spoqa-han-sans-regular.woff") format("woff"),
+  url("../fonts/spoqa-han-sans-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans";
+  font-weight: 700;
+  src: local("Spoqa Han Sans Bold"),
+  url("../fonts/spoqa-han-sans-bold.woff2") format("woff2"),
+  url("../fonts/spoqa-han-sans-bold.woff") format("woff"),
+  url("../fonts/spoqa-han-sans-bold.ttf") format("truetype");
+}

@@ -1,0 +1,291 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+body {
+  -ms-overflow-style:none;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img,
+video {
+  display: block;
+/*  height: auto;*/
+/*  max-width: 100%;*/
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: left;
+}
+
+html {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-color: white;
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 1.6vw;
+  }
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Spoqa Han Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: monospace;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  word-break: keep-all;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+main{
+  display: none;
+}
+
+#loading{
+  z-index: 999;
+  background-color: white;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+}
+
+#loading img{
+  position: absolute;
+  width: 60%;
+  height: auto;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+[lang="en"] {
+  font-family: Arial, sans-serif;
+  line-height: 1.325;
+}
+
+.nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.nav img {
+  position: absolute;
+  width: 35%;
+  min-width: 280px;
+}
+
+#sola-logo, #sola-logo-name{
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+#sola-logo-name{
+}
+
+
+#hwan-logo{
+  left: 50%;
+  margin-top: -5rem;
+  transform: translate(-50%, 0) rotate(-90deg);
+}
+
+#minjeong-logo{
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.description-wrapper-click{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.description-wrapper{
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 7.5rem;
+  padding-top: 3.3rem;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  overflow: scroll;
+  z-index: 99 !important;
+}
+
+.title{
+  text-align: center;
+  font-weight: 700;
+
+}
+
+.main-title{
+  text-align: center;
+  font-weight: 700;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 2rem;
+  width: 100%;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 600px){
+  .nav img {
+    width: 50%;
+    max-width: 230px;
+    min-width: 0px;
+  }
+
+  #hwan-logo{
+    margin-top: -40px;
+  }
+
+  #sola-logo, #minjeong-logo{
+    top: 300px;
+  }
+
+  .description-wrapper{
+    padding: 2rem;
+    font-size: 1.3rem;
+
+  }
+
+  .main-title{
+    font-size: 1.5rem;
+    bottom: 1rem;
+  }
+
+}
