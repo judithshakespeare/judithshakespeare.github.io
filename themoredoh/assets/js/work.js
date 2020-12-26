@@ -11,7 +11,7 @@ $(document).ready(function(){
     };
   });
 
-  $(window).on('wheel', function(e) {
+  $(window).bind('mousewheel DOMMouseScroll', function(e) {
     if($('.lighting').length){
       var delta = e.originalEvent.deltaY;
       if (delta < 0) {
@@ -20,23 +20,15 @@ $(document).ready(function(){
     };
   });
 
-  var lastPoint = null; //global
+  // var last_pos= 0;
 
-$('.work-image').on('touchend', function(e){
-
-    var currentPoint = e.originalEvent.changedTouches[0].pageY;
-
-    if(lastPoint != null && lastPoint < currentPoint ){
-
-    }else if(lastPoint != null && lastPoint > currentPoint){
-        if($('.lighting').length){
-      var delta = e.originalEvent.deltaY;
-      if (delta < 0) {
-        $('.lighting').hide();
-      };
-    };
-    }
-
-    lastPoint = currentPoint;
-});
+  // $(window).scroll(function () {
+  //   var current_pos= $(this).scrollTop();
+  //   if (current_pos > last_pos) {
+  //     alert('down');
+  //   } else {
+  //     alert('up');
+  //   }
+  //   last_pos = current_pos;
+  // });
 });
