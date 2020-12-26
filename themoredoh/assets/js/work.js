@@ -19,4 +19,24 @@ $(document).ready(function(){
       };
     };
   });
+
+  var lastPoint = null; //global
+
+$('.work-image').on('touchend', function(e){
+
+    var currentPoint = e.originalEvent.changedTouches[0].pageY;
+
+    if(lastPoint != null && lastPoint < currentPoint ){
+
+    }else if(lastPoint != null && lastPoint > currentPoint){
+        if($('.lighting').length){
+      var delta = e.originalEvent.deltaY;
+      if (delta < 0) {
+        $('.lighting').hide();
+      };
+    };
+    }
+
+    lastPoint = currentPoint;
+});
 });
