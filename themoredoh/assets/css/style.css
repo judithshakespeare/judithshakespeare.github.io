@@ -103,7 +103,6 @@ html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  background-color: white;
 }
 
 @media screen and (min-width: 1000px) {
@@ -230,9 +229,10 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 1.5rem 7.5rem;
+  padding: 1.5rem 4.5rem;
   padding-top: 3.3rem;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  line-height: 1.6;
   text-align: center;
   background-color: black;
   color: white;

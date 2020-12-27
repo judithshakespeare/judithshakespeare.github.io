@@ -19,16 +19,4 @@ $(document).ready(function(){
       };
     };
   });
-
-  // var last_pos= 0;
-
-  // $(window).scroll(function () {
-  //   var current_pos= $(this).scrollTop();
-  //   if (current_pos > last_pos) {
-  //     alert('down');
-  //   } else {
-  //     alert('up');
-  //   }
-  //   last_pos = current_pos;
-  // });
 });

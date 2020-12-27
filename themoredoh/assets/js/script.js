@@ -35,10 +35,7 @@ $(document).ready(function(){
 // });
 // });
 
-  var position = $(window).scrollTop(); 
-
-// should start at 0
-
+var position = $(window).scrollTop();
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if(scroll > position) {
