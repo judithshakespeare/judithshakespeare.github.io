@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   setTimeout(function() {
     $('#loading').hide();
+    $('body').css('overflow', 'scroll');
   }, 2800);
 
   $('.work-image').on('scroll', function() {
