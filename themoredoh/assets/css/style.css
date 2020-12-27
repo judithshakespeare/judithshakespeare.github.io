@@ -166,8 +166,8 @@ a {
   position: absolute;
   width: 60%;
   height: auto;
-  top: 50vh;
-  left: 50vw;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -231,7 +231,7 @@ a {
   height: 100%;
   padding: 1.5rem 4.5rem;
   padding-top: 3.3rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   text-align: center;
   background-color: black;
@@ -275,7 +275,7 @@ a {
 
   .description-wrapper{
     padding: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 
   }
 
