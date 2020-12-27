@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
-    setTimeout(function() {
+  setTimeout(function() {
     $('#loading').hide();
-    // $('main').show();
   }, 2800);
 
   $('.work-image').on('scroll', function() {
@@ -11,12 +10,13 @@ $(document).ready(function(){
     };
   });
 
-  $(window).bind('mousewheel DOMMouseScroll', function(e) {
-    if($('.lighting').length){
-      var delta = e.originalEvent.deltaY;
-      if (delta < 0) {
-        $('.lighting').hide();
-      };
+  var position = $(window).scrollTop();
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if(scroll > position) {
+      $('.lighting').hide();
     };
+    position = scroll;
   });
+
 });
