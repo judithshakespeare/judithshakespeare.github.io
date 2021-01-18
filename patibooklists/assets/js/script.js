@@ -23,7 +23,7 @@ $(document).ready(function() {
     var listlength = $('.bookshelf > li:visible').length;
     if(width < 500){
       if(listlength >= 21){
-        $('body').css('height', height + 300);
+        $('body').css('height', height + 310);
       }else{
         $('body').css('height', '100%');
       }
