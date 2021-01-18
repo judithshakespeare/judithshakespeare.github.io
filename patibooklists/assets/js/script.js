@@ -22,14 +22,14 @@ $(document).ready(function() {
     var height = $('main').height();
     var listlength = $('.bookshelf > li:visible').length;
     if(width < 500){
-      if(listlength >= 19){
+      if(listlength >= 21){
         $('body').css('height', height + 300);
       }else{
         $('body').css('height', '100%');
       }
     } else{
-      if(listlength >= 19){
-        $('body').css('height', 'calc(100% + 340px)');
+      if(listlength >= 21){
+        $('body').css('height', 'calc(100% + 440px)');
       }else{
         $('body').css('height', '100%');
       }
@@ -78,6 +78,9 @@ function shuffle(a) {
   $('.kl' + findlist2).css('background-color', colors[6]);
   $('.nr' + findlist1).css('background-color', colors[7]);
   $('.nr' + findlist2).css('background-color', colors[7]);
+  $('.jo' + findlist1).css('background-color', colors[8]);
+  $('.jo' + findlist2).css('background-color', colors[8]);
+
 
   $('.art.field').click(function(){
     $('span[class*="field"]').parent('li').not($('span[class*="field art"]').parent('li')).hide();
@@ -131,6 +134,11 @@ function shuffle(a) {
 
   $('.field').click(function(){
     $('body').css('height', '100%');
+  });
+
+  $('.jo > .recommend').click(function(){
+    $('.bookshelf > li').not($('.jo')).hide();
+    $('#show-all').show();
   });
 
   $('.nr > .recommend').click(function(){
