@@ -344,8 +344,14 @@ a {
     font-size: 13px;
     line-height: 1.55;
     overflow: auto;
-
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
   }
+
+  .book-description-text::-webkit-scrollbar { 
+    display: none; /* for Chrome, Safari, and Opera */
+}
 
   .book-description-title{
     display: inline-block;
