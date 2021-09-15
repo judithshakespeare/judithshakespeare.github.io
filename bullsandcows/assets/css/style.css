@@ -1,0 +1,21 @@
+#wrapper form{
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ced4da;
+}
+
+#result{
+    width: 200px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+@media (min-width: 1200px){
+    .container {
+    max-width: 960px;
+}
+
+@media (min-width: 1400px){
+    .container {
+    max-width: 960px;
+}
